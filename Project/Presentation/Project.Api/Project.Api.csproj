@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>ba372116-594f-44e5-a58b-210abe85eb5d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Customer\CustomerNotificationModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="FirebaseAdmin" Version="2.2.0" />
+    <PackageReference Include="Select.HtmlToPdf.NetCore" Version="22.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\..\Libraries\Project.Data\Project.Data.csproj" />
+    <ProjectReference Include="..\..\Libraries\Project.Services\Project.Services.csproj" />
+    <ProjectReference Include="..\Project.Web.Framework\Project.Web.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PaytmChecksum">
+      <HintPath>..\..\..\..\..\..\Users\admin\Downloads\PaytmChecksum.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

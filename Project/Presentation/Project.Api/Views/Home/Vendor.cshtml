@@ -1,0 +1,134 @@
+﻿@* @model SignalRDemo.Models.Notification
+
+<h1>Vendor bid</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label class="control-label">Offset</label>
+            <input type="number" id="offset" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="OrderId" class="control-label"></label>
+            <input asp-for="OrderId" class="form-control" />
+            <span asp-validation-for="OrderId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="BidAmount" class="control-label"></label>
+            <input asp-for="BidAmount" class="form-control" />
+            <span asp-validation-for="BidAmount" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SLA" class="control-label"></label>
+            <input asp-for="SLA" class="form-control" />
+            <span asp-validation-for="SLA" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SearchText" class="control-label"></label>
+            <input asp-for="SearchText" class="form-control" />
+            <span asp-validation-for="SearchText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button type="button" id="savebtn" value="Create" class="btn btn-primary">Create</button>
+            <button type="button" id="updatebtn" value="update" class="btn btn-primary">Update</button>
+            <button type="button" id="btnLoads" value="update" class="btn btn-primary">Get Loads Offset</button>
+            <button type="button" id="btnLoadBids" value="update" class="btn btn-primary">Get bids list</button>
+            <button type="button" id="btnLoadBidsOffset" value="update" class="btn btn-primary"> Bids Offset</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script>
+        //chatting
+        //var connection = new signalR.HubConnectionBuilder().withUrl("/bidHub").build();
+
+        const options = {
+            accessTokenFactory: getToken
+        };
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/PtlHub", options)
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        connection.start();
+
+        connection.on("loadPtlLoads", function (msg) {
+            console.log(JSON.stringify(msg));
+        });
+
+        connection.on("updateVendorOrderStatus", function (msg) {
+            console.log(JSON.stringify(msg));
+        });
+
+        connection.on("loadVendorPtlOrderBidList", function (msg) {
+            console.log(JSON.stringify(msg));
+        });
+
+        $('#savebtn').click(function () {
+            let bidAmount = parseInt($("#BidAmount").val());
+            let sla = parseInt($("#SLA").val());
+            let orderId = parseInt($("#OrderId").val());
+
+            let bid = { BidAmount: bidAmount, SLA: sla, OrderId: orderId};
+            connection.invoke("PlaceBid", bid).catch(function (err) {
+                return console.error(err.toString());
+            });
+        });
+
+        $('#updatebtn').click(function () {
+            let id = parseInt($("#Id").val());
+            let bidAmount = parseInt($("#BidAmount").val());
+            let sla = parseInt($("#SLA").val());
+            let orderId = parseInt($("#OrderId").val());
+
+            let bid = { BidAmount: bidAmount, SLA: sla, Id: id, OrderId: orderId  };
+            connection.invoke("UpdateBid", bid).catch(function (err) {
+                return console.error(err.toString());
+            });
+        });
+
+        $('#btnLoads').click(function () {
+            let offSet = parseInt($("#offset").val());
+            let searchText = $("#SearchText").val();
+
+            let orderDetail = { OffSet: offSet, SearchText: searchText };
+            connection.invoke("LoadPtlVendorLoadListForPagination", orderDetail).catch(function (err) {
+                return console.error(err.toString());
+            });
+        });
+
+        $('#btnLoadBids').click(function () {
+            let orderDetail = { OffSet: 0 };
+            connection.invoke("LoadPtlVendorBidList", orderDetail).catch(function (err) {
+                return console.error(err.toString());
+            });
+        });
+
+        $('#btnLoadBidsOffset').click(function () {
+            let offSet = parseInt($("#offset").val());
+            let searchText = $("#SearchText").val();
+
+            let bid = { OffSet: offSet, SearchText: searchText };
+            connection.invoke("LoadPtlVendorBidListForPagination", bid).catch(function (err) {
+                return console.error(err.toString());
+            });
+        });
+
+        //get token
+        function getToken() {
+            return 'eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEzOTAiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJUcnVja0JoZWpvLlZlbmRvciIsImV4cCI6MTY5Njc1Njg0MiwiaXNzIjoiaHR0cHM6Ly9kZXYubG9hZG5vdy5pbyIsImF1ZCI6Imh0dHBzOi8vZGV2LmxvYWRub3cuaW8ifQ.3io2fVE-fZhWPGCEfNqeE8XczDXby5NWhfih9jgtUYs';
+        }
+
+    </script>
+} *@

@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    @* <title>Report</title> *@
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dashboard Page</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/assets/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <!-- Linearicon Font -->
+    @*<link rel="stylesheet" href="~/assets/css/lnr-icon.css">*@
+
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!-- INTERNAL  Tabs css-->
+    <link href="~/assets/plugins/tabs/style.css" rel="stylesheet" />
+
+    <!-- Multiselect and Searchable DDL CSS -->
+    <link href="~/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+
+    <!-- Datatable CSS -->
+    <!--<link href="~/assets/css/dataTables.bootstrap4.min.css" rel="stylesheet" />-->
+    <link href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+    <script src="~/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="~/assets/js/jquery.tmpl.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+    <!-- Sticky sidebar JS -->
+    <script src="~/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+    <script src="~/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Chart JS -->
+    <script src="~/assets/js/Chart.min.js"></script>
+    <script src="~/assets/js/chart.js"></script>
+
+    <!-- Custom Js -->
+    <script src="~/assets/js/script.js"></script>
+
+    <!-- Multiselect and Searchable DDL JS -->
+    <script src="~/assets/plugins/select2/select2.min.js"></script>
+    <script src="~/assets/plugins/select2/bs-custom-file-input.min.js"></script>
+    <script src="~/assets/plugins/select2/main.js"></script>
+
+    <!--- INTERNAL Tabs js-->
+    <script src="~/assets/plugins/tabs/jquery.multipurpose_tabcontent.js"></script>
+    <script src="~/assets/js/tabs.js"></script>
+
+    <!-- Datatable JS -->
+    <!--<script src="~/assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/assets/js/jquery.dataTables.min.js"></script>-->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <style>
+        .notification-badge .badge {
+            position: absolute;
+            display: block !important;
+            padding: 3px 5px !important;
+            border-radius: 100%;
+            line-height: 1;
+            font-family: 'Open Sans', sans-serif;
+            width: 18px;
+            height: 18px;
+            top: 6px;
+            right: 100px;
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+            .notification-badge .badge:hover {
+                font-size: 11px !important;
+            }
+
+        .notification-badge .icon:hover {
+            background: none !important;
+        }
+
+        .notification-badge .icon:focus {
+            background: none !important;
+        }
+
+        .notification-badge .header-icon {
+            font-size: 25px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            width: 35px;
+            height: 35px;
+            background: #fff;
+            padding: 8px;
+            border-radius: 50px;
+            box-shadow: 0px 2px 3px rgb(4 4 7 / 10%);
+            border: 1px solid #ebecf1;
+        }
+
+        .side-dd-item:hover {
+            background-color: #ffed00;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Inner wrapper -->
+    <div class="inner-wrapper">
+
+        <!-- Loader -->
+        <div id="loader-wrapper">
+
+            <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+
+        <!-- Header -->
+        <header class="header">
+
+            <!-- Top Header Section -->
+            <div class="top-header-section">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+                            <div class="logo my-3 my-sm-0">
+                                <a href="~/Home/Index">
+                                    <img src="~/assets/img/logo.png" alt="logo image" class="img-fluid" width="100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-6 text-right">
+                            <div class="user-block d-none d-lg-block">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                        <!-- User notification-->
+
+                                        <div class="notification-badge align-right d-inline-block">
+                                            <ul class="list-inline m-0">
+                                                <li class="list-inline-item item-animated" data-toggle="tooltip" data-placement="top" title="" data-original-title="Apply Leave">
+                                                    <a class="nav-link icon" href="~/Notification/Index">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v3.586l-1.707 1.707C3.105 15.48 3 15.734 3 16v2c0 .553.447 1 1 1h16c.553 0 1-.447 1-1v-2c0-.266-.105-.52-.293-.707L19 13.586zM19 17H5v-.586l1.707-1.707C6.895 14.52 7 14.266 7 14v-4c0-2.757 2.243-5 5-5s5 2.243 5 5v4c0 .266.105.52.293.707L19 16.414V17zM12 22c1.311 0 2.407-.834 2.818-2H9.182C9.593 21.166 10.689 22 12 22z"></path></svg>
+                                                        <span class="badge badge-danger side-badge">0</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- /User notification-->
+                                        <!-- user info-->
+                                        <div class="user-info align-right dropdown d-inline-block header-dropdown">
+                                            <a href="javascript:void(0)" data-toggle="dropdown" class=" menu-style dropdown-toggle">
+                                                <div class="user-avatar d-inline-block">
+                                                    <img src="~/assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle img-fluid" width="55">
+                                                </div>
+                                            </a>
+
+                                            <!-- Notifications -->
+                                            <div class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
+
+                                                <a class="dropdown-item p-2" href="@Url.Action("LogOut","User")">
+                                                    <span class="media align-items-center">
+                                                        <span class="lnr lnr-power-switch mr-3"></span>
+                                                        <span class="media-body text-truncate">
+                                                            <span class="text-truncate">Logout</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!-- Notifications -->
+
+                                        </div>
+                                        <!-- /User info-->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-block d-lg-none">
+                                <a href="javascript:void(0)">
+                                    <span class="lnr lnr-menu   d-block display-5 text-white" id="open_navSidebar"></span>
+                                </a>
+
+                                <!-- Offcanvas menu -->
+                                <div class="offcanvas-menu" id="offcanvas_menu">
+                                    <span class="lnr lnr-cross float-left display-6 position-absolute t-1 l-1 text-white" id="close_navSidebar"></span>
+                                    <div class="user-info align-center bg-theme text-center">
+                                        <a href="javascript:void(0)" class="d-block menu-style text-white">
+                                            <div class="user-avatar d-inline-block mr-3">
+                                                <img src="~/assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle" width="50">
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                    <div class="user-menu-items px-3 m-0">
+                                        <a class="p-2" href="~/Company/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Master Data</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                     @*    <a class="p-2" href="~/Order/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Trips</span>
+                                                </span>
+                                            </span>
+                                        </a> *@
+                                        <a class="pt-2 toggle-dropdown" href="#">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="d-flex justify-content-between">
+                                                        <span class="text-truncate text-left">Trips</span>
+                                                        <i class='fa fa-caret-down right'></i>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <div class="dropdown-menu-side">
+                                                <div class="d-flex flex-column" style="text-align:left !important;">
+                                                    <a class="px-5 side-dd-item" href="~/Order/Index">FTL Order</a>
+                                                    <a class="px-5 side-dd-item" href="~/PTLOrder/List">PTL Order</a>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a class="p-2" href="~/Tracking/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Tracking</span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a class="p-2" href="~/EPOD/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">EPOD</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="p-2" href="~/Invoice/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Invoice </span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a class="p-2" href="~/Report/PodReport">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Reports</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                        <a class="p-2" href="~/Analytics/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Analytics</span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a class="p-2" href="~/Settings/Index">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-home mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Settings</span>
+                                                </span>
+                                            </span>
+                                        </a>
+
+                                        <a class="p-2" href="@Url.Action("LogOut","User")">
+                                            <span class="media align-items-center">
+                                                <span class="lnr lnr-power-switch mr-3"></span>
+                                                <span class="media-body text-truncate text-left">
+                                                    <span class="text-truncate text-left">Logout</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /Offcanvas menu -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Top Header Section -->
+            <!-- Slide Nav -->
+            <!-- Slide Nav -->
+            <div class="header-wrapper d-none d-sm-none d-md-none d-lg-block">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
+                                <div class="append mr-auto my-0 my-md-0 mr-auto">
+                                    <ul class="list-group list-group-horizontal-md mr-auto" id="TabMainSection">
+
+                                        <li class="mr-1 active"><a href="~/Home/Index" class="btn-ctm-space text-white"><span class="lnr lnr-home pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Dashboard</span></a></li>
+                                        <li class="mr-1" id="MasterData"><a class="text-dark btn-ctm-space " href="~/Company/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Master Data</span></a></li>
+
+                                        @* <li class="mr-1" id="TabTrips"><a class="text-dark btn-ctm-space " href="~/Order/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Trips</span></a></li> *@
+                                        @* Added Dropdown for PTL Orders and FTL orders. *@
+                                        <li class="mr-1 dropdown" id="TabTrips">
+                                            <a class="text-dark btn-ctm-space dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Trips
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                @* <a class="dropdown-item" href="~/Order/Index">FTL </a> *@
+                                                <a class="dropdown-item" href="~/Order/Index">FTL Order</a>
+                                                <a class="dropdown-item" href="~/PTLOrder/List">PTL Order</a>
+                                            </div>
+                                        </li>
+
+                                        <li class="mr-1" id="TabTracking"><a class="text-dark btn-ctm-space " href="~/Tracking/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Tracking</span></a></li>
+                                        <li class="mr-1" id="TabEPOD"><a class="text-dark btn-ctm-space " href="~/EPOD/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">EPOD</span></a></li>
+                                        <li class="mr-1" id="TabInvoice"><a class="text-dark btn-ctm-space " href="~/Invoice/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Invoice</span></a></li>
+                                        <li class="mr-1" id="TabReport"><a class="text-dark btn-ctm-space " href="~/Reports/PodReport"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Reports</span></a></li>
+                                        <li class="mr-1" id="TabBulkUpload"><a class="text-dark btn-ctm-space " href="~/BulkUpload/Index"><span class="lnr lnr-upload pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Bulk Upload</span></a></li>
+                                        @*<li class="mr-1" id="TabAnalytics"><a class="text-dark btn-ctm-space " href="~/Analytics/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Analytics</span></a></li>*@
+                                        <li class="mr-1" id="TabSettings"><a class="text-dark btn-ctm-space " href="~/Settings/Index"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Settings</span></a></li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Slide Nav -->
+
+        </header>
+        <!-- /Header -->
+        <!-- Content -->
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-12 theiaStickySidebar">
+                        <aside class="sidebar sidebar-user">
+                            <div class="card ctm-border-radius shadow-sm">
+                                <div class="card-body py-3">
+                                    <div class="row">
+                                        <div class="col-md-12 mr-auto text-left">
+                                            <div class="custom-search input-group">
+                                                <div class="custom-breadcrumb">
+                                                    <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
+                                                        <li class="breadcrumb-item d-inline-block"><a href="~/Home/Index" class="text-dark">Home</a></li>
+                                                        <li class="breadcrumb-item d-inline-block active">Dashboard</li>
+                                                    </ol>
+                                                    <h4 class="text-dark">Master Data</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white card">
+                                <div class="card-body">
+                                    <ul class="list-group" id="TabSideMenu">
+                                        <li class="list-group-item text-center active" id="TabCompany"><a href="~/Company/Index" class="text-white">Company</a></li>
+                                        @*<li class="list-group-item text-center button-6"><a class="text-dark" href="~/ManagerType/Index">ManagerType</a></li>*@
+                                        <li class="list-group-item text-center" ><a class="text-dark" id="Podreport1" href="#"onclick="podreport()">Podreport</a></li>
+                                        <li class="list-group-item text-center"><a class="text-dark" id="Tripreport1">Tripreport</a></li>
+                                        <li class="list-group-item text-center" id="TabCustomer"><a class="text-dark" href="~/Customer/Index">Customer</a></li>
+                                        <li class="list-group-item text-center" id="TabVehicleType"><a class="text-dark" href="~/VehicleType/Index">VehicleType</a></li>
+                                        <li class="list-group-item text-center" id="TabVehicleDriver"><a class="text-dark" href="~/VehicleDriver/Index">VehicleDriver</a></li>
+                                        <li class="list-group-item text-center" id="TabOfficeAddress"><a class="text-dark" href="~/OfficeAddress/List">Office Address</a></li>
+                                        <li class="list-group-item text-center" id="TabCommission"><a class="text-dark" href="~/Commission/Index">Commission</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    @await Html.PartialAsync("Notifications")
+                    @RenderBody()
+                    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+                    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js"></script>
+
+                    @* Side bar drop down code *@
+                    <script>
+                        $(document).ready(function () {
+                            $('.dropdown-menu-side').hide();
+                            $('.toggle-dropdown').click(function (e) {
+                                e.preventDefault();
+                                $('.dropdown-menu-side').fadeToggle();
+                            });
+                        });
+                    </script>
+
+                    <script>
+
+                        // TODO: Replace firebaseConfig you get from Firebase Console
+                        const firebaseConfig = {
+                            apiKey: "AIzaSyAMogxb17GjfrehagbToE3gg1jlrkPm-Q0",
+                            authDomain: "truckbhejo-3ff88.firebaseapp.com",
+                            databaseURL: "https://truckbhejo-3ff88.firebaseio.com",
+                            projectId: "truckbhejo-3ff88",
+                            storageBucket: "truckbhejo-3ff88.appspot.com",
+                            messagingSenderId: "45717064404",
+                            appId: "1:45717064404:web:5994824372f2cb2305c941",
+                            measurementId: "G-7FFLSEZMHJ"
+                        };
+                        firebase.initializeApp(firebaseConfig);
+
+                        const USER_TOKEN = "TRUCKBJEJO_ADMIN_TOEKN";
+                        const messaging = firebase.messaging();
+                        messaging
+                            .requestPermission()
+                            .then(function () {
+                                //console.log('Notification permission granted.');
+
+                                // get the token in the form of promise
+                                return messaging.getToken();
+                            })
+                            .then(function (token) {
+                                    let dataToken = localStorage.getItem(USER_TOKEN);
+                                            $.ajax({
+                                                url: "@Url.Action("UpdateUserDeviceToken", "User")",
+                                                dataType: "json",
+                                                type: "POST",
+                                                data: {token : token},
+                                                success: function (data) {
+                                                    //console.log(token);
+                                                },
+                                                error: function (result) {
+                                                    alert(JSON.stringify(result));
+                                                }
+                                            });
+                                        localStorage.setItem(USER_TOKEN, token);
+                                //console.log('Device token is : <br>' + token);
+                            })
+                            .catch(function (err) {
+                                //console.log('Unable to get permission to notify.', err);
+                            });
+
+                        let enableForegroundNotification = true;
+                        messaging.onMessage(function (payload) {
+                            console.log('Message received. ', payload);
+                            if (enableForegroundNotification) {
+                                let notification = payload.data;
+                                navigator.serviceWorker
+                                    .getRegistrations()
+                                    .then((registration) => {
+                                        registration[0].showNotification(notification.title);
+                                    });
+                            }
+                        });
+
+                    </script>
+
+                </div>
+            </div>
+        </div>
+        <!--/Content-->
+
+    </div>
+    <!-- Inner Wrapper -->
+
+
+</body>
+</html>

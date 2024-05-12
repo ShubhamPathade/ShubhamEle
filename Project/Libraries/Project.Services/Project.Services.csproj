@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Vehicle\**" />
+    <EmbeddedResource Remove="Vehicle\**" />
+    <None Remove="Vehicle\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAdmin" Version="2.2.0" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="1.7.0" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
+    <PackageReference Include="Twilio" Version="5.65.0" />
+    <PackageReference Include="Twilio.AspNet.Common" Version="5.68.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\Project.Data\Project.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>

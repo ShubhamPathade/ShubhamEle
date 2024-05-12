@@ -1,0 +1,133 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>a671ab41-e37d-4c80-a96c-7b3dfdebc65c</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\Admin\Data\**" />
+    <Compile Remove="Areas\Admin\Models\**" />
+    <Compile Remove="wwwroot\assets\SearchableDropdown\**" />
+    <Compile Remove="wwwroot\BannerImage\**" />
+    <Compile Remove="wwwroot\CompanyContractDocument\**" />
+    <Compile Remove="wwwroot\CompanyLogo\**" />
+    <Compile Remove="wwwroot\CustomerPhoto\**" />
+    <Compile Remove="wwwroot\DocumentTypeImage\**" />
+    <Compile Remove="wwwroot\EwayBillImage\**" />
+    <Compile Remove="wwwroot\ExpenseDocument\**" />
+    <Compile Remove="wwwroot\InvoiceReports\**" />
+    <Compile Remove="wwwroot\LRDocuments\**" />
+    <Compile Remove="wwwroot\LRImage\**" />
+    <Compile Remove="wwwroot\ManagerPhoto\**" />
+    <Compile Remove="wwwroot\PaymentReceipts\**" />
+    <Compile Remove="wwwroot\ReceiptImage\**" />
+    <Compile Remove="wwwroot\ReportDocuments\**" />
+    <Compile Remove="wwwroot\RequisitionReport\**" />
+    <Compile Remove="wwwroot\VehicleTypeImage\**" />
+    <Compile Remove="wwwroot\VendorAdharImage\**" />
+    <Compile Remove="wwwroot\VendorCancelledChequeImage\**" />
+    <Compile Remove="wwwroot\VendorPanImage\**" />
+    <Compile Remove="wwwroot\VendorProfile\**" />
+    <Compile Remove="wwwroot\VendorTdsImage\**" />
+    <Content Remove="Areas\Admin\Data\**" />
+    <Content Remove="Areas\Admin\Models\**" />
+    <Content Remove="wwwroot\assets\SearchableDropdown\**" />
+    <Content Remove="wwwroot\BannerImage\**" />
+    <Content Remove="wwwroot\CompanyContractDocument\**" />
+    <Content Remove="wwwroot\CompanyLogo\**" />
+    <Content Remove="wwwroot\CustomerPhoto\**" />
+    <Content Remove="wwwroot\DocumentTypeImage\**" />
+    <Content Remove="wwwroot\EwayBillImage\**" />
+    <Content Remove="wwwroot\ExpenseDocument\**" />
+    <Content Remove="wwwroot\InvoiceReports\**" />
+    <Content Remove="wwwroot\LRDocuments\**" />
+    <Content Remove="wwwroot\LRImage\**" />
+    <Content Remove="wwwroot\ManagerPhoto\**" />
+    <Content Remove="wwwroot\PaymentReceipts\**" />
+    <Content Remove="wwwroot\ReceiptImage\**" />
+    <Content Remove="wwwroot\ReportDocuments\**" />
+    <Content Remove="wwwroot\RequisitionReport\**" />
+    <Content Remove="wwwroot\VehicleTypeImage\**" />
+    <Content Remove="wwwroot\VendorAdharImage\**" />
+    <Content Remove="wwwroot\VendorCancelledChequeImage\**" />
+    <Content Remove="wwwroot\VendorPanImage\**" />
+    <Content Remove="wwwroot\VendorProfile\**" />
+    <Content Remove="wwwroot\VendorTdsImage\**" />
+    <EmbeddedResource Remove="Areas\Admin\Data\**" />
+    <EmbeddedResource Remove="Areas\Admin\Models\**" />
+    <EmbeddedResource Remove="wwwroot\assets\SearchableDropdown\**" />
+    <EmbeddedResource Remove="wwwroot\BannerImage\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyContractDocument\**" />
+    <EmbeddedResource Remove="wwwroot\CompanyLogo\**" />
+    <EmbeddedResource Remove="wwwroot\CustomerPhoto\**" />
+    <EmbeddedResource Remove="wwwroot\DocumentTypeImage\**" />
+    <EmbeddedResource Remove="wwwroot\EwayBillImage\**" />
+    <EmbeddedResource Remove="wwwroot\ExpenseDocument\**" />
+    <EmbeddedResource Remove="wwwroot\InvoiceReports\**" />
+    <EmbeddedResource Remove="wwwroot\LRDocuments\**" />
+    <EmbeddedResource Remove="wwwroot\LRImage\**" />
+    <EmbeddedResource Remove="wwwroot\ManagerPhoto\**" />
+    <EmbeddedResource Remove="wwwroot\PaymentReceipts\**" />
+    <EmbeddedResource Remove="wwwroot\ReceiptImage\**" />
+    <EmbeddedResource Remove="wwwroot\ReportDocuments\**" />
+    <EmbeddedResource Remove="wwwroot\RequisitionReport\**" />
+    <EmbeddedResource Remove="wwwroot\VehicleTypeImage\**" />
+    <EmbeddedResource Remove="wwwroot\VendorAdharImage\**" />
+    <EmbeddedResource Remove="wwwroot\VendorCancelledChequeImage\**" />
+    <EmbeddedResource Remove="wwwroot\VendorPanImage\**" />
+    <EmbeddedResource Remove="wwwroot\VendorProfile\**" />
+    <EmbeddedResource Remove="wwwroot\VendorTdsImage\**" />
+    <None Remove="Areas\Admin\Data\**" />
+    <None Remove="Areas\Admin\Models\**" />
+    <None Remove="wwwroot\assets\SearchableDropdown\**" />
+    <None Remove="wwwroot\BannerImage\**" />
+    <None Remove="wwwroot\CompanyContractDocument\**" />
+    <None Remove="wwwroot\CompanyLogo\**" />
+    <None Remove="wwwroot\CustomerPhoto\**" />
+    <None Remove="wwwroot\DocumentTypeImage\**" />
+    <None Remove="wwwroot\EwayBillImage\**" />
+    <None Remove="wwwroot\ExpenseDocument\**" />
+    <None Remove="wwwroot\InvoiceReports\**" />
+    <None Remove="wwwroot\LRDocuments\**" />
+    <None Remove="wwwroot\LRImage\**" />
+    <None Remove="wwwroot\ManagerPhoto\**" />
+    <None Remove="wwwroot\PaymentReceipts\**" />
+    <None Remove="wwwroot\ReceiptImage\**" />
+    <None Remove="wwwroot\ReportDocuments\**" />
+    <None Remove="wwwroot\RequisitionReport\**" />
+    <None Remove="wwwroot\VehicleTypeImage\**" />
+    <None Remove="wwwroot\VendorAdharImage\**" />
+    <None Remove="wwwroot\VendorCancelledChequeImage\**" />
+    <None Remove="wwwroot\VendorPanImage\**" />
+    <None Remove="wwwroot\VendorProfile\**" />
+    <None Remove="wwwroot\VendorTdsImage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BarCode" Version="2022.7.7345" />
+    <PackageReference Include="EPPlus" Version="5.8.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Project.Core\Project.Core.csproj" />
+    <ProjectReference Include="..\..\Libraries\Project.Data\Project.Data.csproj" />
+    <ProjectReference Include="..\..\Libraries\Project.Services\Project.Services.csproj" />
+    <ProjectReference Include="..\Project.Web.Framework\Project.Web.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\assets\img\EmailTemplateLogo\" />
+  </ItemGroup>
+
+</Project>

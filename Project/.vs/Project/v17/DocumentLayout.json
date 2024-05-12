@@ -1,0 +1,332 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Shubham Ele\\Project\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\views\\state\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\state\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\states\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\states\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\models\\common\\postmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\common\\postmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\models\\states\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\states\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\views\\role\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\role\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\project\\libraries\\project.core\\domain\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web\\infrastructure\\mapper\\mapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\infrastructure\\mapper\\mapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A66E7096-5916-4A83-990F-6C006130580F}|Presentation\\Project.Web.Framework\\Project.Web.Framework.csproj|d:\\shubham ele\\project\\project\\presentation\\project.web.framework\\infrastructure\\dependencyregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A66E7096-5916-4A83-990F-6C006130580F}|Presentation\\Project.Web.Framework\\Project.Web.Framework.csproj|solutionrelative:presentation\\project.web.framework\\infrastructure\\dependencyregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\notifications\\emailaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\notifications\\emailaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\notifications\\emailnotificationserice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\notifications\\emailnotificationserice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\notifications\\pushtomanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\notifications\\pushtomanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\notifications\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\notifications\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\project\\libraries\\project.services\\states\\istateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\states\\istateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IStateService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\States\\IStateService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\States\\IStateService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\States\\IStateService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\States\\IStateService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:31:55.462Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StateService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\States\\StateService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\States\\StateService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\States\\StateService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\States\\StateService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:32:27.641Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T09:46:40.782Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StateController.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Controllers\\StateController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\StateController.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Controllers\\StateController.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\StateController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:45:41.466Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AjaxMethods.js",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
+              "RelativeToolTip": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-12T10:07:40.344Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PostModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Models\\Common\\PostModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\Common\\PostModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Models\\Common\\PostModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\Common\\PostModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:35:53.723Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Role\\Create.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Role\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Role\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T11:13:29.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StateModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Models\\States\\StateModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\States\\StateModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Models\\States\\StateModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\States\\StateModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:00:31.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Role\\List.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Role\\List.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Role\\List.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Role\\List.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T11:13:34.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T11:10:40.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "State.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Domain\\States\\State.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\States\\State.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Domain\\States\\State.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\States\\State.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:55:57.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_MasterLayout.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAACkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T09:47:28.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MapperConfiguration.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T10:00:50.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DependencyRegistrar.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "RelativeToolTip": "Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwC0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:44:40.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmailNotificationSerice.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\EmailNotificationSerice.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Notifications\\EmailNotificationSerice.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\EmailNotificationSerice.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Notifications\\EmailNotificationSerice.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:37:44.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PushToManagerService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\PushToManagerService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Notifications\\PushToManagerService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\PushToManagerService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Notifications\\PushToManagerService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:37:34.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\INotificationService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Notifications\\INotificationService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\INotificationService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Notifications\\INotificationService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:37:20.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmailAccountService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\EmailAccountService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Notifications\\EmailAccountService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Notifications\\EmailAccountService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Notifications\\EmailAccountService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T09:35:58.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

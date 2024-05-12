@@ -1,0 +1,28 @@
+﻿@model RoleModel
+
+<div class="col-xl-9 col-lg-8  col-md-12">
+    <div class="accordion add-employee" id="accordion-details">
+        <div class="card shadow-sm ctm-border-radius">
+            <div class="card-header" id="basic1">
+                <h4 class="cursor-pointer mb-0">
+                    <a class=" coll-arrow d-block text-dark" href="javascript:void(0)" data-toggle="collapse" data-target="#basic-one" aria-expanded="true">
+                        Basic Details
+                        <br><span class="ctm-text-sm"></span>
+                    </a>
+                </h4>
+            </div>
+            <div class="card-body p-0">
+                <div id="basic-one" class="collapse show ctm-padding" aria-labelledby="basic1" data-parent="#accordion-details">
+                    <form asp-action="Edit" method="post">
+                        @Html.AntiForgeryToken()
+
+                        @await Html.PartialAsync("_CreateOrUpdate", Model)
+
+                        <button class="btn btn-theme text-white ctm-border-radius button-1" type="submit">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
