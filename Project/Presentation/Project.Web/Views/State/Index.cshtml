@@ -27,20 +27,65 @@
     </div>
 </div>
 
+
+<!-- Row start -->
+<div class="row gutters">
+	<div class="col-sm-12">
+		<div class="card">
+			<div class="card-header">Vertical Scroll</div>
+			<div class="card-body">
+				<table id="scrollVertical" class="table table-striped table-bordered">
+					<thead>
+						<tr>
+                            <th>Index</th>
+							<th>Name</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+                    <tbody id="tblStateList">
+
+                    </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Row ends -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
+
     $(document).ready(() => {
+
         $('#btnSubmit').click(() => {
             handleFormSubmission();
         });
+
     });
 
     const handleFormSubmission = async () => {
 
         let dataObject = { '@Html.NameFor(Model => Model.Name)': $('#@Html.IdFor(Model => Model.Name)').val() };
-        let response = await postData({ type: "POST", controller: "State", endPoint: "AddState", data: dataObject });
-        console.log(response);
+       
+        let response = await postOrPutData({ type: "POST", controller: "State", endPoint: "AddState", data: dataObject });
+       
+        await fetchDataInTable();
 
     }
+
+    const fetchDataInTable = async () => {
+
+        let response = await getData({ controller: "State", endPoint: "GetStates", retriveDataById: false });
+
+        await fetchDataTable({ dataArray: response.data, tableId: "tblStateList", deleteAction: true, viewAction :true});
+
+    }
+
+    setInterval(() => {
+        fetchDataInTable();
+    }, 3000);
+
+
+
 </script>
