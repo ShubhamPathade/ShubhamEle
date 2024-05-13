@@ -10544,11 +10544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
+      "projectUniqueName": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
       "projectName": "Project.Services",
-      "projectPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
+      "projectPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
       "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
-      "outputPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\obj\\",
+      "outputPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Shubham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10565,11 +10565,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Project.Core.csproj": {
-              "projectPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Project.Core.csproj"
+            "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Project.Core.csproj": {
+              "projectPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Project.Core.csproj"
             },
-            "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Data\\Project.Data.csproj": {
-              "projectPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Data\\Project.Data.csproj"
+            "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Project.Data.csproj": {
+              "projectPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Project.Data.csproj"
             }
           }
         }

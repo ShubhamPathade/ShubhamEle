@@ -8620,11 +8620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Project.Core.csproj",
+      "projectUniqueName": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Project.Core.csproj",
       "projectName": "Project.Core",
-      "projectPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\Project.Core.csproj",
+      "projectPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Project.Core.csproj",
       "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
-      "outputPath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Core\\obj\\",
+      "outputPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Shubham\\AppData\\Roaming\\NuGet\\NuGet.Config",

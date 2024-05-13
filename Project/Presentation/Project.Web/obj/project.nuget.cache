@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5CLi3IAql3JsMei/ZLylKSWao4i6qo+FtaYB4YgEzx/Xdl+WqVW6cGuh6YSZzl1kQP04y6wzR8dajebhRmRDGg==",
+  "dgSpecHash": "Br1LEhAdLXwbLP6MQR3rbt3egYMqFbfAdZ/zyxqa7ImCh3cHdijBSnQT+VVgogejbUINv62A5Ov4CQ0R+g6+Cg==",
   "success": true,
-  "projectFilePath": "D:\\Shubham Ele\\Project\\Project\\Presentation\\Project.Web\\Project.Web.csproj",
+  "projectFilePath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Project.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shubham\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
     "C:\\Users\\Shubham\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

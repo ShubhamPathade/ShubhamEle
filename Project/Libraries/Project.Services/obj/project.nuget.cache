@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MxzEN2jHsQ/ZcGDVPrNkDLsiAOPrRTPuToZazWCp68FVVMQB6GR/PT6dvUSvMBMcI0yXBbHyyA853MgY4DZDlA==",
+  "dgSpecHash": "cn70N1gCe25YIheagA/IDmJqzOAhIXSuR2kDSjk+Qvicgilf1NToKoa7cQOhmtQA4nQmoPDGVdYuJKT4hsfx+A==",
   "success": true,
-  "projectFilePath": "D:\\Shubham Ele\\Project\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
+  "projectFilePath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shubham\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
     "C:\\Users\\Shubham\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",
