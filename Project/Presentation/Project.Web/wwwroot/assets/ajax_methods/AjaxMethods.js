@@ -79,7 +79,7 @@ const getData = async ({ controller = "State", endPoint = "AddState", parameter 
 }
 
 
-//Fetch data in table
+//Fetch data in table 
 const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,viewAction=false } ) => {
 
     if (dataArray.length > 0) {
