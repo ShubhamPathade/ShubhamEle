@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.Web.Controllers
 {
-    [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
     public class BaseController : Controller
     {
         /// <summary>

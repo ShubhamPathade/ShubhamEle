@@ -1,9 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.Core.Domain.States;
 using Project.Services.States;
+using Project.Web.Framework.Models;
 using Project.Web.Infrastructure.Mapper.Extensions;
+using Project.Web.Models.BaseResponse;
 using Project.Web.Models.States;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Project.Web.Controllers
@@ -28,6 +33,9 @@ namespace Project.Web.Controllers
 		[HttpPost]
 		public async Task<IActionResult> AddState(StateModel model)
 		{
+			var responsModel = new BaseResponse<IEnumerable<StateModel>>();
+
+
 			if (model == null)
 			{
 				return Json(new { message = "Fail" });
@@ -39,6 +47,25 @@ namespace Project.Web.Controllers
 
 			await _stateService.InsertState(state);
 			return Json(new { message = "Ok" });
+		}
+
+
+		[HttpGet]
+		public async Task<IActionResult> GetStates()
+		{
+			var responsModel = new BaseResponse<IEnumerable<StateModel>>();
+
+			var states = await _stateService.GetAllSTates();
+
+			var stateList = states.Select(x => x.ToModel<StateModel>());
+
+
+			responsModel.Data = stateList;
+			responsModel.Messaage = "Ok";
+			responsModel.Status = Status.Success;
+
+
+			return Json(responsModel);
 		}
 
 	}

@@ -17,7 +17,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project.Web")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b19048608ed61800df660216b2a877fc3d87000a")]
+=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19f47637dc137bd36ed9b5acdd4840f8330ea833")]
+>>>>>>> origin/Shubham
 [assembly: System.Reflection.AssemblyTitleAttribute("Project.Web.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

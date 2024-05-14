@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "_MasterLayout";
+}
+<div class="row gutters">
+    <div class="col-sm-12">
+        <form>
+            <div class="form-block">
+                <div class="form-block-header">
+                    <h4>Trader</h4>
+                </div>
+                <div class="form-block-body">
+                    <div class="row gutters">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="inputName" class="col-form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMobNumber" class="col-form-label">Mobile</label>
+                                <input type="number" class="form-control" id="inputMobNumber" placeholder="Mobile">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-form-label">Your E-mail</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSubject" class="col-form-label">Subject</label>
+                                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="col-form-label">Your Message</label>
+                                <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                                <div class="form-text text-muted">
+                                    <p id="characterLeft" class="help-block">Max 250 characters</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gutters">
+                        <div class="col-xl-12">
+                            <button type="button" id="submit" name="submit" class="btn btn-primary float-right">
+                                Submit
+                                Form
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
