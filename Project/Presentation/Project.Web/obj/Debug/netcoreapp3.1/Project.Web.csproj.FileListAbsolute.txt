@@ -2297,5 +2297,8 @@ D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\De
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Project.Web.dll
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Project.Web.pdb
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Project.Web.genruntimeconfig.cache
+<<<<<<< HEAD
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Electrician\Index.cshtml.g.cs
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Trader\Index.cshtml.g.cs
+=======
+>>>>>>> origin/Shubham

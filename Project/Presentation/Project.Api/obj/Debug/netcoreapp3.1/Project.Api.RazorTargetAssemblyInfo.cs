@@ -16,7 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project.Api")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b2418eb63deecf67d3e44047a3623f06e6560fa")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19f47637dc137bd36ed9b5acdd4840f8330ea833")]
+>>>>>>> origin/Shubham
 [assembly: System.Reflection.AssemblyTitleAttribute("Project.Api.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
