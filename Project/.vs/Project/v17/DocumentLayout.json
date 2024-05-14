@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\domain\\electricians\\electrician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\electricians\\electrician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFF2AF19-FE7C-4AA6-A705-542A4AF68C2C}|Libraries\\Project.Data\\Project.Data.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.data\\mapping\\cities\\citymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFF2AF19-FE7C-4AA6-A705-542A4AF68C2C}|Libraries\\Project.Data\\Project.Data.csproj|solutionrelative:libraries\\project.data\\mapping\\cities\\citymap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFF2AF19-FE7C-4AA6-A705-542A4AF68C2C}|Libraries\\Project.Data\\Project.Data.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.data\\mapping\\states\\statemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFF2AF19-FE7C-4AA6-A705-542A4AF68C2C}|Libraries\\Project.Data\\Project.Data.csproj|solutionrelative:libraries\\project.data\\mapping\\states\\statemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D2F061B-CD94-409A-B79D-2300376E5010}|Presentation\\Project.Api\\Project.Api.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.api\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D2F061B-CD94-409A-B79D-2300376E5010}|Presentation\\Project.Api\\Project.Api.csproj|solutionrelative:presentation\\project.api\\controllers\\vendorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,117 +17,33 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 140,
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CityMap.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Mapping\\Cities\\CityMap.cs",
-              "RelativeDocumentMoniker": "Libraries\\Project.Data\\Mapping\\Cities\\CityMap.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Mapping\\Cities\\CityMap.cs",
-              "RelativeToolTip": "Libraries\\Project.Data\\Mapping\\Cities\\CityMap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:58:42.987Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 294,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StateMap.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Mapping\\States\\StateMap.cs",
-              "RelativeDocumentMoniker": "Libraries\\Project.Data\\Mapping\\States\\StateMap.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Data\\Mapping\\States\\StateMap.cs",
-              "RelativeToolTip": "Libraries\\Project.Data\\Mapping\\States\\StateMap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:54:31.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Electrician.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
-              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
-              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA9wBEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:53:03.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\BaseController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\BaseController.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\BaseController.cs",
-              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\BaseController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T16:59:57.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "AjaxMethods.js",
               "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "RelativeDocumentMoniker": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "RelativeToolTip": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH0AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-13T18:30:34.957Z",
+              "WhenOpened": "2024-05-14T17:13:35.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VendorController.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Api\\Controllers\\VendorController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Project.Api\\Controllers\\VendorController.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Api\\Controllers\\VendorController.cs",
-              "RelativeToolTip": "Presentation\\Project.Api\\Controllers\\VendorController.cs",
-              "ViewState": "AQIAANgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Program.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Program.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:22:29.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StateController.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\StateController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\StateController.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\StateController.cs",
-              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\StateController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwEYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T18:18:55.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T16:59:52.62Z",
+              "WhenOpened": "2024-05-14T17:02:29.518Z",
               "EditorCaption": ""
             }
           ]
