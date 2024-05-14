@@ -32,6 +32,7 @@ const postOrPutData = async ({ type = "POST", controller = "State", endPoint = "
 
 }
 
+
 // Get all data or get data by id
 const getData = async ({ controller = "State", endPoint = "AddState", parameter = "id", parameterValue = 0, retriveDataById = false }) => {
 
