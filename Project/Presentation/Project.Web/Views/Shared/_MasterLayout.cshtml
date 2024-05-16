@@ -1,716 +1,316 @@
-﻿<!doctype html>
-<html lang="en">
+﻿<!DOCTYPE html>
 
+<html lang="en"
+      class="light-style layout-menu-fixed layout-compact"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../assets/"
+      data-template="vertical-menu-template-free">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="Admin Dashboard Templates" />
-	<meta name="keywords"
-		  content="Admin, Dashboard, Bootstrap4, Sass, CSS3, HTML5, Responsive Dashboard, Responsive Admin Template, Admin Template, Best Admin Template, Bootstrap Template, Wrapbootstrap" />
-	<meta name="author" content="Bootstrap Gallery" />
-	<link rel="canonical" href="~/https://www.bootstrap.gallery/">
-	<meta property="og:url" content="https://www.bootstrap.gallery">
-	<meta property="og:title" content="Admin Templates - Dashboard Templates | Bootstrap Gallery">
-	<meta property="og:description" content="Marketplace for Bootstrap Admin Dashboards">
-	<meta property="og:type" content="Website">
-	<meta property="og:site_name" content="Bootstrap Gallery">
-	<link rel="shortcut icon" href="~/img/favicon.svg" />
-	<title>Admin Dashboard Templates</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-	<!--
-		**********************
-		**********************
-		Common CSS files
-		**********************
-		**********************
-	-->
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <title>Welcome</title>
 
-	<!-- Icomoon Icons CSS -->
-	<link rel="stylesheet" href="~/fonts/icomoon/icomoon.css" />
+    <meta name="description" content="" />
 
-	<!-- Master CSS -->
-	<link rel="stylesheet" href="~/css/main.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/assets/img/favicon/favicon.ico" />
 
-	<!-- Daterange CSS -->
-	<link rel="stylesheet" href="~/vendor/daterange/daterange.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet" />
 
-	<!--
-		**********************
-		**********************
-		Optional CSS files
-		**********************
-		**********************
-	-->
-	<!-- Morris CSS -->
-	<link rel="stylesheet" href="~/vendor/morris/morris.css" />
+    <link rel="stylesheet" href="~/assets/vendor/fonts/boxicons.css" />
 
-	<!-- Circliful CSS -->
-	<link rel="stylesheet" href="~/vendor/circliful/circliful.css" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="~/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/assets/css/demo.css" />
 
-	<!-- Datepickers css -->
-	<link rel="stylesheet" href="~/css/jquery-ui.css" />
-	<link rel="stylesheet" href="~/css/datepicker.css" />
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/assets/vendor/libs/apex-charts/apex-charts.css" />
 
-	<!--JQuery-->
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="~/assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="~/assets/js/config.js"></script>
+
+    <!--JQuery-->
     <script src="~/assets/js/jquery-3.2.1.min.js"></script>
+
+    <!--Common Ajax Methods-->
+    <script src="~/assets/ajax_methods/ajaxmethods.js"></script>
+
+    <!--Data Table-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.bootstrap5.js"></script>
+
 </head>
 
 <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
 
-	<!-- Loading starts -->
-	<div id="loading-wrapper">
-		<div id="loader">
-			<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>
-			<div class="line4"></div>
-			<div class="line5"></div>
-			<div class="line6"></div>
-		</div>
-	</div>
-	<!-- Loading ends -->
-	<!-- BEGIN .app-wrap -->
-	<div class="app-wrap">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="#" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            <svg width="25"
+                                 viewBox="0 0 25 42"
+                                 version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <path d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+                                          id="path-1"></path>
+                                    <path d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
+                                          id="path-3"></path>
+                                    <path d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
+                                          id="path-4"></path>
+                                    <path d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
+                                          id="path-5"></path>
+                                </defs>
+                                <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
+                                        <g id="Icon" transform="translate(27.000000, 15.000000)">
+                                            <g id="Mask" transform="translate(0.000000, 8.000000)">
+                                                <mask id="mask-2" fill="white">
+                                                    <use xlink:href="#path-1"></use>
+                                                </mask>
+                                                <use fill="#696cff" xlink:href="#path-1"></use>
+                                                <g id="Path-3" mask="url(#mask-2)">
+                                                    <use fill="#696cff" xlink:href="#path-3"></use>
+                                                    <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                                                </g>
+                                                <g id="Path-4" mask="url(#mask-2)">
+                                                    <use fill="#696cff" xlink:href="#path-4"></use>
+                                                    <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
+                                                </g>
+                                            </g>
+                                            <g id="Triangle"
+                                               transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
+                                                <use fill="#696cff" xlink:href="#path-5"></use>
+                                                <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="app-brand-text demo menu-text fw-bold ms-2">Shubham</span>
+                    </a>
 
-		<!-- BEGIN .app-heading -->
-		<header class="app-header">
-			<div class="container-fluid">
-				<div class="row gutters">
-					<div class="col-xl-6 col-md-7 col-sm-6 col-7">
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
 
-						<!-- Toggle button start, Only visible when the screen size is less than 992px -->
-						<a class="hoverable-toggler" href="~/#" id="app-side-hoverable-toggler">
-							<i class="icon-menu5"></i>
-						</a>
+                <div class="menu-inner-shadow"></div>
 
-						<a href="~/#app-side" data-toggle="onoffcanvas" class="onoffcanvas-toggler onoffcanvas-nav"
-						   aria-expanded="true">
-							<i class="icon-menu5"></i>
-						</a>
-						<!-- Toggle button end -->
-						<!-- Logo start -->
-						<a class="logo" href="~/index.html">
-							<img src="~/img/logo.svg" alt="Bootstrap Gallery" /> <strong>Milestone</strong>
-						</a>
-						<!-- Logo end -->
+                <ul class="menu-inner py-1">
+                    <!-- Layouts -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-layout"></i>
+                            <div data-i18n="Register">Register</div>
+                        </a>
 
-					</div>
+                        <ul class="menu-sub">
+                            <li class="menu-item active">
+                                <a href="@Url.ActionLink("Index","Electrician")" class="menu-link">
+                                    <div data-i18n="Without menu">Electrician</div>
+                                </a>
+                            </li>                      
+                        </ul>
+                    </li>
 
-					<div class="col-xl-6 col-md-5 col-sm-6 col-5">
+           
+                </ul>
+            </aside>
+            <!-- / Menu -->
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
 
-						<!-- Header actions start -->
-						<ul class="header-actions">
-							<li class="dropdown">
-								<a href="~/#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
-									<i class="icon-notifications_none"></i>
-									<span class="count-label">7</span>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right lg" aria-labelledby="notifications">
-									<ul class="imp-notify">
-										<li class="clearfix">
-											<div class="avatar">
-												<img src="~/img/user2.png" alt="Etsy Admin Dashboards" />
-												<span class="notify-iocn icon-drafts text-danger"></span>
-											</div>
-											<div class="details">
-												<h6>Wilson</h6>
-												<p>The best Dashboard design I have seen ever.</p>
-											</div>
-										</li>
-										<li class="clearfix">
-											<div class="avatar">
-												<img src="~/img/user4.png" alt="Etsy Admin Dashboards" />
-												<span class="notify-iocn icon-sphere text-info"></span>
-											</div>
-											<div class="details">
-												<h6>John Smith</h6>
-												<p>Jhonny sent you a message. Read now!</p>
-											</div>
-										</li>
-										<li class="clearfix">
-											<div class="avatar">
-												<img src="~/img/user2.png" alt="Etsy Admin Dashboards" />
-												<span class="notify-iocn icon-cake2 text-danger"></span>
-											</div>
-											<div class="details">
-												<h6>Justin Mezzell</h6>
-												<p>Stella, Added you as a Friend. Accept it!</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li>
-								<a href="~/#" id="todos" data-toggle="dropdown" aria-haspopup="true">
-									<i class="icon-person_outline"></i>
-									<span class="count-label red">5</span>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right lg" aria-labelledby="todos">
-									<ul class="stats-widget">
-										<li>
-											<h4>$8500</h4>
-											<p>Revenue <span>+18%</span></p>
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0"
-													 aria-valuemax="100" style="width: 87%">
-													<span class="sr-only">87% Complete (success)</span>
-												</div>
-											</div>
-										</li>
-										<li>
-											<h4>4750</h4>
-											<p>Downloads <span>+56%</span></p>
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0"
-													 aria-valuemax="100" style="width: 65%">
-													<span class="sr-only">65% Complete (success)</span>
-												</div>
-											</div>
-										</li>
-										<li>
-											<h4>2500</h4>
-											<p>Uploads <span class="text-secondary">-3%</span></p>
-											<div class="progress">
-												<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="42" aria-valuemin="0"
-													 aria-valuemax="100" style="width: 42%">
-													<span class="sr-only">42% Complete (success)</span>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</li>
-							<li class="dropdown">
-								<a href="~/#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
-									<span class="avatar">JD<span class="status online"></span></span>
-									<span class="user-name">Jeffrey David</span>
-									<i class="icon-chevron-small-down"></i>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
-									<ul class="user-settings-list">
-										<li>
-											<a href="~/profile.html">
-												My Profile<span class="badge badge-danger">7</span>
-											</a>
-										</li>
-										<li>
-											<a href="~/#">
-												Notifications<span class="badge badge-info">12</span>
-											</a>
-										</li>
-										<li>
-											<a href="~/#">Account Settings</a>
-										</li>
-										<li class="dropdown-divider"></li>
-										<li>
-											<a href="~/#">Logout</a>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						<!-- Header actions end -->
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                     id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
 
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- END: .app-heading -->
-		<!-- BEGIN .app-container -->
-		<div class="app-container">
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <!-- Search -->
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-search fs-4 lh-0"></i>
+                                <input type="text"
+                                       class="form-control border-0 shadow-none ps-1 ps-sm-2"
+                                       placeholder="Search..."
+                                       aria-label="Search..." />
+                            </div>
+                        </div>
+                        <!-- /Search -->
 
-			<!-- BEGIN .app-side -->
-			<aside class="app-side" id="app-side">
+                       @*  <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <!-- Place this tag where you want the button to render. -->
+                            <li class="nav-item lh-1 me-3">
+                                <a class="github-button"
+                                   href="https://github.com/themeselection/sneat-html-admin-template-free"
+                                   data-icon="octicon-star"
+                                   data-size="large"
+                                   data-show-count="true"
+                                   aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+                            </li>
 
-				<!-- BEGIN .side-content -->
-				<div class="side-content">
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="~/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="~/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-medium d-block">John Doe</span>
+                                                    <small class="text-muted">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                <span class="flex-grow-1 align-middle ms-1">Billing</span>
+                                                <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0);">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul> *@
+                    </div>
+                </nav>
 
-					<!-- User details start -->
-					<div class="user-details clearfix">
-						<img src="~/img/user.png" class="thumb" alt="Modern Admin Dashboard" />
-						<div class="user-info">
-							<h5 class="username">Zilony Mika</h5>
-							<h6 class="email">user@example.com</h6>
-						</div>
-					</div>
-					<!-- User details end -->
-					<!-- BEGIN .user actions -->
-					<ul class="user-actions">
-						<li>
-							<a href="~/#">
-								<i class="icon-social-skype"></i>
-								<span class="count-label blue"></span>
-							</a>
-						</li>
-						<li>
-							<a href="~/#">
-								<i class="icon-social-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="~/#">
-								<i class="icon-export"></i>
-							</a>
-						</li>
-					</ul>
-					<!-- END .user actions -->
-					<!-- Custom search start -->
-					<div class="form-group custom-search">
-						<input type="text" class="form-control search-query" placeholder="Search for...">
-						<button class="btn" type="button">
-							<i class="icon-magnifying-glass"></i>
-						</button>
-					</div>
-					<!-- Custom search end -->
-					<!-- BEGIN .side-nav -->
-					<nav class="side-nav">
-						<div class="sidebarNavScroll">
-							<!-- BEGIN: side-nav-content -->
-							<ul class="customSidebarMenu" id="customSidebarMenu">
-								<li class="selected">
-									<a href="@Url.Action("Index","State")">
-										<span class="has-icon">
-											<i class="icon-av_timer"></i>
-										</span>
-										<span class="nav-title">State</span>
-									</a>
-								</li>							
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-center_focus_strong"></i>
-										</span>
-										<span class="nav-title">Trader</span>
-										<span class="lbl">12</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href="@Url.Action("Index","Trader")">Register</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-center_focus_strong"></i>
-										</span>
-										<span class="nav-title">Electrician</span>
-										<span class="lbl">12</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href="@Url.Action("Index","Electrician")">Register</a>
-										</li>					
-									</ul>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-center_focus_strong"></i>
-										</span>
-										<span class="nav-title">Forms</span>
-										<span class="lbl">12</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href="~/bs-select.html">BS Select</a>
-										</li>
-										<li>
-											<a href="~/range-sliders.html">Range Sliders</a>
-										</li>
-										<li>
-											<a href="~/form-inputs.html">Form Inputs</a>
-										</li>
-										<li>
-											<a href="~/input-groups.html">Inputs Groups</a>
-										</li>
-										<li>
-											<a href="~/checkbox-radio.html">Checkbox &amp; Radio</a>
-										</li>
-										<li>
-											<a href="~/contact.html">Contact Form</a>
-										</li>
-										<li>
-											<a href="~/contact2.html">Contact Form #2</a>
-										</li>
-										<li>
-											<a href="~/contact3.html">Contact Form #3</a>
-										</li>
-										<li>
-											<a href="~/contact4.html">Contact Form #4</a>
-										</li>
-										<li>
-											<a href="~/subscribe-form.html">Subscribe Form</a>
-										</li>
-										<li>
-											<a href="~/checkout-form.html">Checkout Form</a>
-										</li>
-										<li>
-											<a href="~/summernote-editor.html">Editor</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/custom-tables.html">
-										<span class="has-icon">
-											<i class="icon-nfc"></i>
-										</span>
-										<span class="nav-title">Custom Tables</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/tables.html">
-										<span class="has-icon">
-											<i class="icon-border_outer"></i>
-										</span>
-										<span class="nav-title">Tables</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/datatables.html">
-										<span class="has-icon">
-											<i class="icon-pages"></i>
-										</span>
-										<span class="nav-title">Data Tables</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-opacity"></i>
-										</span>
-										<span class="nav-title">UI Elements</span>
-										<span class="lbl red">15</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href="~/general-elements.html">General Elements</a>
-										</li>
-										<li>
-											<a href="~/buttons.html">Buttons</a>
-										</li>
-										<li>
-											<a href="~/button-groups.html">Button Groups</a>
-										</li>
-										<li>
-											<a href="~/tabs.html">Tabs</a>
-										</li>
-										<li>
-											<a href="~/accordion.html">Accordion</a>
-										</li>
-										<li>
-											<a href="~/labels-badges.html">Labels &amp; Badges</a>
-										</li>
-										<li>
-											<a href="~/notifications.html">Notifications</a>
-										</li>
-										<li>
-											<a href="~/list-items.html">List Items</a>
-										</li>
-										<li>
-											<a href="~/navbars.html">Navbars</a>
-										</li>
-										<li>
-											<a href="~/popovers-tooltips.html">Popovers &amp; Tooltips</a>
-										</li>
-										<li>
-											<a href="~/progress.html">Progress Bars</a>
-										</li>
-										<li>
-											<a href="~/pagination.html">Pagination</a>
-										</li>
-										<li>
-											<a href="~/media-objects.html">Media Objects</a>
-										</li>
-										<li>
-											<a href="~/carousel.html">Carousels</a>
-										</li>
-										<li>
-											<a href="~/modals.html">Modals</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/cards.html">
-										<span class="has-icon">
-											<i class="icon-style"></i>
-										</span>
-										<span class="nav-title">Cards</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/typography.html">
-										<span class="has-icon">
-											<i class="icon-text_fields"></i>
-										</span>
-										<span class="nav-title">Typography</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/calendar.html">
-										<span class="has-icon">
-											<i class="icon-event_note"></i>
-										</span>
-										<span class="nav-title">Calendar</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-chart-area-outline"></i>
-										</span>
-										<span class="nav-title">Graphs</span>
-										<span class="lbl">3</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href='c3-graphs.html'>C3 Graphs</a>
-										</li>
-										<li>
-											<a href='flot.html'>Flot Graphs</a>
-										</li>
-										<li>
-											<a href='morris.html'>Morris Graphs</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/contacts.html">
-										<span class="has-icon">
-											<i class="icon-people"></i>
-										</span>
-										<span class="nav-title">Contacts</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/invoice.html">
-										<span class="has-icon">
-											<i class="icon-receipt"></i>
-										</span>
-										<span class="nav-title">Invoice</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/pricing.html">
-										<span class="has-icon">
-											<i class="icon-verified_user"></i>
-										</span>
-										<span class="nav-title">Pricing</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-business_center"></i>
-										</span>
-										<span class="nav-title">Pages</span>
-										<span class="lbl red">5</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href='layout.html'>Layout</a>
-										</li>
-										<li>
-											<a href='profile.html'>Profile</a>
-										</li>
-										<li>
-											<a href='blog.html'>Blog</a>
-										</li>
-										<li>
-											<a href='timeline.html'>Timeline</a>
-										</li>
-										<li>
-											<a href="~/faq.html">Faq's</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-public"></i>
-										</span>
-										<span class="nav-title">Maps</span>
-										<span class="lbl">2</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href='google-maps.html'>Google Maps</a>
-										</li>
-										<li>
-											<a href='vector-maps.html'>Vector Maps</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="~/icons.html">
-										<span class="has-icon">
-											<i class="icon-layers"></i>
-										</span>
-										<span class="nav-title">Icons</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/gallery.html">
-										<span class="has-icon">
-											<i class="icon-camera3"></i>
-										</span>
-										<span class="nav-title">Gallery</span>
-									</a>
-								</li>
-								<li>
-									<a href="~/#" class="has-arrow" aria-expanded="false">
-										<span class="has-icon">
-											<i class="icon-lock_outline"></i>
-										</span>
-										<span class="nav-title">Authentication</span>
-										<span class="lbl red">6</span>
-									</a>
-									<ul aria-expanded="false">
-										<li>
-											<a href="~/login.html">Login</a>
-										</li>
-										<li>
-											<a href="~/signup.html">Signup</a>
-										</li>
-										<li>
-											<a href="~/error404.html">Error 404</a>
-										</li>
-										<li>
-											<a href="~/error505.html">Error 505</a>
-										</li>
-										<li>
-											<a href="~/forgot-pwd.html">Forgot Password</a>
-										</li>
-										<li>
-											<a href="~/locked-screen.html">Locked Screen</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<!-- END: side-nav-content -->
-						</div>
-					</nav>
-					<!-- END: .side-nav -->
+                <!-- / Navbar -->
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Content -->
 
-				</div>
-				<!-- END: .side-content -->
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                       @RenderBody()
+                    </div>
+                    <!-- / Content -->
+                    <!-- Footer -->
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , made with ❤️ by
+                                <a href="#" target="_blank" class="footer-link fw-medium">SP Corp</a>
+                            </div>
+                            <div class="d-none d-lg-inline-block">
+                                @* <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
+                                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
-			</aside>
-			<!-- END: .app-side -->
-			<!-- BEGIN .app-main -->
-			<div class="app-main">
+                                <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
+                                   target="_blank"
+                                   class="footer-link me-4">Documentation</a>
 
-				<!-- BEGIN .main-heading -->
-				<header class="main-heading">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-xl-8 col-lg-8 col-md-6 col-sm-6">
-								<ol class="breadcrumb">
-									<li class="breadcrumb-item home">
-										<a href="~/index.html">
-											<i class="icon-home"></i>
-										</a>
-									</li>
-									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-								</ol>
-							</div>
-							<div class="col-lg-4 col-sm-6">
-								<div class="daterange-container">
-									<div id="reportrange" class="form-control">
-										<span></span> <i class="icon-chevron-down down-arrow"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</header>
-				<!-- END: .main-heading -->
-				<!-- BEGIN .main-content -->
-				<div class="main-content">
-					@RenderBody()
-				</div>
-				<!-- END: .main-content -->
-				<!-- BEGIN .main-footer -->
-				<footer class="main-footer fixed-btm">
-					© Bootstrap Gallery 2023
-				</footer>
-				<!-- END: .main-footer -->
+                                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                                   target="_blank"
+                                   class="footer-link">Support</a> *@
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- / Footer -->
 
-			</div>
-			<!-- END: .app-main -->
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!-- Content wrapper -->
+            </div>
+            <!-- / Layout page -->
+        </div>
 
-		</div>
-		<!-- END: .app-container -->
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
 
-	</div>
-	<!-- END: .app-wrap -->
-	<!--
-		**********************
-		**********************
-		Common JS files
-		**********************
-		**********************
-	-->
-	<!-- jQuery first, then Tether, then other JS. -->
-	<script src="~/js/jquery.js"></script>
+    @* <div class="buy-now">
+        <a href="#"
+           target="_blank"
+           class="btn btn-danger btn-buy-now">Go To Top</a>
+    </div> *@
 
-	<!-- jQuery UI -->
-	<script src="~/js/jquery-ui.min.js"></script>
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
 
-	<script src="~/js/tether.min.js"></script>
-	<script src="~/js/bootstrap.min.js"></script>
-	<script src="~/vendor/MilestoneNav/MilestoneNav.js"></script>
-	<script src="~/vendor/onoffcanvas/onoffcanvas.js"></script>
-	<script src="~/js/moment.js"></script>
+    <script src="~/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/assets/vendor/libs/popper/popper.js"></script>
+    <script src="~/assets/vendor/js/bootstrap.js"></script>
+    <script src="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/assets/vendor/js/menu.js"></script>
 
-	<!-- Daterange JS -->
-	<script src="~/vendor/daterange/daterange.js"></script>
-	<script src="~/vendor/daterange/custom-daterange.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <script src="~/assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
-	<!-- Slimscroll JS -->
-	<script src="~/vendor/slimscroll/slimscroll.min.js"></script>
-	<script src="~/vendor/slimscroll/custom-scrollbar.js"></script>
+    <!-- Main JS -->
+    <script src="~/assets/js/main.js"></script>
 
+    <!-- Page JS -->
+    <script src="~/assets/js/dashboards-analytics.js"></script>
 
-	<!--
-		**********************
-		**********************
-		Optional JS files - Plugns
-		**********************
-		**********************
-	-->
-	<!-- Morris Graphs -->
-	<script src="~/vendor/morris/raphael-min.js"></script>
-	<script src="~/vendor/morris/morris.min.js"></script>
-	<script src="~/vendor/morris/custom/areaChart.js"></script>
-
-	<!-- Circliful -->
-	<script src="~/vendor/circliful/circliful.min.js"></script>
-	<script src="~/vendor/circliful/circliful.custom.js"></script>
-
-	<!-- JVector Maps -->
-	<script src="~/vendor/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
-	<script src="~/vendor/jvectormap/usa.js"></script>
-	<script src="~/vendor/jvectormap/custom/map-usa1.js"></script>
-
-	<!-- Common JS -->
-	<script src="~/js/common.js"></script>
-
-	<!--= Common Ajax Methods -->
-    <script src="~/assets/ajax_methods/ajaxmethods.js"></script>
-
-	<script type="text/javascript">
-		//Datepicker
-		$(function () {
-			$("#datepicker").datepicker();
-		});
-	</script>
-
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
-
 </html>

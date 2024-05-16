@@ -54,8 +54,15 @@ using Project.Web.Models.States;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\Views\_ViewImports.cshtml"
+using Project.Web.Models.Electricians;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e", @"/Views/Role/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"658fd9b729de98660eb38c820613987caeb81f8eb45b4b3061d1e1c11e69e6db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2323473da21a8d9cd337ee06e17864f7005d7a18ba92c48ff408cf1c412722e7", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Role_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<RoleModel>>
     #nullable disable
@@ -101,7 +108,7 @@ using Project.Web.Models.States;
             <ul class=""nav nav-tabs float-right border-0 tab-list-emp"">
                 <li class=""nav-item"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e7557", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e7777", async() => {
                 WriteLiteral("<i class=\"fa fa-th-large\" aria-hidden=\"true\"></i>");
             }
             );
@@ -117,7 +124,7 @@ using Project.Web.Models.States;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e8874", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e9094", async() => {
                 WriteLiteral("<i class=\"fa fa-list-ul\" aria-hidden=\"true\"></i>");
             }
             );
@@ -133,7 +140,7 @@ using Project.Web.Models.States;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item pl-3\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e10195", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e10415", async() => {
                 WriteLiteral("<i class=\"fa fa-plus\"></i> Add Role");
             }
             );
@@ -187,7 +194,7 @@ using Project.Web.Models.States;
 #line hidden
 #nullable disable
             WriteLiteral("                            <tr>\r\n                                <td>\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e12734", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e12954", async() => {
                 WriteLiteral("<i class=\"fa fa-pencil\"></i>");
             }
             );
@@ -219,7 +226,7 @@ using Project.Web.Models.States;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e15088", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e7be34de593f01d79db2295d17360621606260197db6365afb807c36766c1e15308", async() => {
                 WriteLiteral("<i class=\"fa fa-trash\"></i>");
             }
             );

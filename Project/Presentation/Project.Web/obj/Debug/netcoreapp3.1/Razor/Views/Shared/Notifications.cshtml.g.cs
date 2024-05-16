@@ -54,8 +54,15 @@ using Project.Web.Models.States;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\Views\_ViewImports.cshtml"
+using Project.Web.Models.Electricians;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e092cc7412ef98fe2b0ae755d40297b56a87162c69715091b59e21b1262bea76", @"/Views/Shared/Notifications.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"658fd9b729de98660eb38c820613987caeb81f8eb45b4b3061d1e1c11e69e6db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2323473da21a8d9cd337ee06e17864f7005d7a18ba92c48ff408cf1c412722e7", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Notifications : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

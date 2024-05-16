@@ -54,8 +54,15 @@ using Project.Web.Models.States;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\Views\_ViewImports.cshtml"
+using Project.Web.Models.Electricians;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d4", @"/Views/User/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"658fd9b729de98660eb38c820613987caeb81f8eb45b4b3061d1e1c11e69e6db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2323473da21a8d9cd337ee06e17864f7005d7a18ba92c48ff408cf1c412722e7", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_User_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<UserModel>>
     #nullable disable
@@ -100,7 +107,7 @@ using Project.Web.Models.States;
             <ul class=""nav nav-tabs float-right border-0 tab-list-emp"">
                 <li class=""nav-item"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d46876", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d47096", async() => {
                 WriteLiteral("<i class=\"fa fa-th-large\" aria-hidden=\"true\"></i>");
             }
             );
@@ -116,7 +123,7 @@ using Project.Web.Models.States;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d48193", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d48413", async() => {
                 WriteLiteral("<i class=\"fa fa-list-ul\" aria-hidden=\"true\"></i>");
             }
             );
@@ -132,7 +139,7 @@ using Project.Web.Models.States;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item pl-3\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d49514", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d49734", async() => {
                 WriteLiteral("<i class=\"fa fa-plus\"></i> Add User");
             }
             );
@@ -246,7 +253,7 @@ using Project.Web.Models.States;
 #line hidden
 #nullable disable
             WriteLiteral("                                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d414271", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59925645d72ddce30786c48be20b6007d80ef55277c38f4d801ad7e7dbab68d414491", async() => {
                 WriteLiteral("Edit");
             }
             );

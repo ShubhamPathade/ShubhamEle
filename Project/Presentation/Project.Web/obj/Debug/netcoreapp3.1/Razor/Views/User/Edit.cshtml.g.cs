@@ -54,8 +54,15 @@ using Project.Web.Models.States;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\Views\_ViewImports.cshtml"
+using Project.Web.Models.Electricians;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d34407fd3b596486a254372158e8021a06eaaff7d24a81db0cda3eb6da3afd86", @"/Views/User/Edit.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"658fd9b729de98660eb38c820613987caeb81f8eb45b4b3061d1e1c11e69e6db", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2323473da21a8d9cd337ee06e17864f7005d7a18ba92c48ff408cf1c412722e7", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_User_Edit : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<UserModel>
     #nullable disable
@@ -103,7 +110,7 @@ using Project.Web.Models.States;
                 <div id=""basic-one"" class=""collapse show ctm-padding"" aria-labelledby=""basic1"" data-parent=""#accordion-details"">
 
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d34407fd3b596486a254372158e8021a06eaaff7d24a81db0cda3eb6da3afd865745", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d34407fd3b596486a254372158e8021a06eaaff7d24a81db0cda3eb6da3afd865965", async() => {
                 WriteLiteral("\r\n                        ");
 #nullable restore
 #line 18 "D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\Views\User\Edit.cshtml"

@@ -1,4 +1,6 @@
-﻿using Project.Core.Domain.States;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Project.Core.Domain.Common;
+using Project.Core.Domain.States;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,5 +12,6 @@ namespace Project.Services.States
     {
         Task InsertState(State state);
         Task<IEnumerable<State>> GetAllSTates();
+        Task<IEnumerable<SelectListItem>> PrepareStateDropDown();
     }
 }

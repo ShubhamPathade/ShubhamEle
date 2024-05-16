@@ -1,58 +1,192 @@
-﻿@{
+﻿@model ElectricianModel
+@{
     Layout = "_MasterLayout";
 }
-<div class="row gutters">
-	<div class="col-sm-12">
-		<form>
-			<div class="form-block">
-				<div class="form-block-header">
-					<h4>Electrician</h4>
-				</div>
-				<div class="form-block-body">
 
-					<div class="row gutters">
-						<div class="col-md-6 col-sm-12">
-							<div class="form-group">
-								<label for="inputName" class="col-form-label">Name</label>
-								<input type="text" class="form-control" id="inputName" placeholder="Name">
-							</div>
-							<div class="form-group">
-								<label for="inputMobNumber" class="col-form-label">Mobile</label>
-								<input type="number" class="form-control" id="inputMobNumber" placeholder="Mobile">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-12">
-							<div class="form-group">
-								<label for="inputEmail" class="col-form-label">Your E-mail</label>
-								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<label for="inputSubject" class="col-form-label">Subject</label>
-								<input type="text" class="form-control" id="inputSubject" placeholder="Subject">
-							</div>
-						</div>
-						<div class="col-sm-12">
-							<div class="form-group">
-								<label class="col-form-label">Your Message</label>
-								<textarea class="form-control" placeholder="Message" rows="3"></textarea>
-								<div class="form-text text-muted">
-									<p id="characterLeft" class="help-block">Max 250 characters</p>
-								</div>
-							</div>
-						</div>
-					</div>
 
-					<div class="row gutters">
-						<div class="col-xl-12">
-							<button type="button" id="submit" name="submit" class="btn btn-primary float-right">
-								Submit
-								Form
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
+<h4 class="py-3 mb-4"><span class="text-muted fw-light">Forms /</span> Electrician</h4>
 
-		</form>
-	</div>
+<!-- Basic Layout -->
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Register / Update Electrician</h5>
+                @* <small class="text-muted float-end">Default label</small> *@
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="FirstName" class="col-form-label">First Name</label>
+                                <input type="text" class="form-control" asp-for="FirstName" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="MiddleName" class="col-form-label">Middle Name</label>
+                                <input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="LastName" class="col-form-label">Last Name</label>
+                                <input type="text" class="form-control" asp-for="LastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="StateId" class="col-form-label">Select State</label>
+                                <select class="form-control selectpicker" asp-for=StateId asp-items="@Model.StateDropDown">
+                                    <option>Choose...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="CityId" class="col-form-label">Select City</label>
+                                <select class="form-control selectpicker" asp-for="CityId">
+                                    <option value="0">Choose State First</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="LivingAddress" class="col-form-label">Living Address</label>
+                                <input type="text" class="form-control" asp-for="LivingAddress" placeholder="Enter Living Address In Breif">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="MobileNumber" class="col-form-label">Mobile Number</label>
+                                <input type="number" class="form-control" asp-for="MobileNumber" placeholder="Enter Mobile Number">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="AlternateMobileNumber" class="col-form-label">Alternate Number</label>
+                                <input type="number" class="form-control" asp-for="AlternateMobileNumber" placeholder="Enter Alternate Mobile Number">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="EmailAddress" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" asp-for="EmailAddress" placeholder="Enter Email Address">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="form-group">
+                                <label asp-for="ZipCode" class="col-form-label">Zip Code</label>
+                                <input type="text" class="form-control" asp-for="ZipCode" placeholder="Enter Zip Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-xl-12" style="text-align:right;">
+                            <button type="button" id="btnRegisterElectrician" name="submit" class="btn btn-primary">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Row start -->
+<div class="card mt-2">
+    <h5 class="card-header">Electrician List</h5>
+    <div class="card-body p-3">
+        <div class="table-responsive text-nowrap">
+            <table id="tblElectrician" class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile Number</th>
+                        <th>Alternate Number</th>
+                        <th>Email Address</th>
+                        <th>Zip Code</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Row ends -->
+
+<script>
+    $(document).ready(() => {
+
+        jQuery.noConflict();
+
+        $('#tblElectrician').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ordering": false,
+            "bLengthChange": false,
+            "ajax": {
+                'url': '@Url.Action("GetElectricians", "Electrician")',
+                'type': 'POST',
+                'data': function (data) {
+                    return data;
+                },
+                "dataSrc": function (json) {
+                    if (!json.data && json.data.length == 0) {
+                        return [];
+                    }
+                    for (let i = 0; i < json.data.length; i++) {
+                        let name = `${json.data[i]["firstName"]??""} ${json.data[i]["middleName"]??""} ${json.data[i]["lastName"]??""}`;
+                        json.data[i]["electricianName"] = name;
+                    }
+                    return json.data;
+                },
+            },
+            'searching': false,
+            "columns": [
+                { "data": "electricianName" },
+                { "data": "mobileNumber" },
+                { "data": "alternateMobileNumber" },
+                { "data": "emailAddress" },
+                { "data": "zipCode" },
+                { "data": "livingAddress" }
+            ]
+        });
+
+    });
+
+    $(`#@Html.IdFor(model => model.StateId)`).on(`change`, async () => {
+
+        let stateId = $(`#@Html.IdFor(model => model.StateId)`).val();
+        let cityData = await getData({ controller: "City", endPoint: "GetCityByState", parameter: "stateId", parameterValue: stateId, retriveDataById: true });
+        let dd = await fetchDropDown({ dataArray: cityData.data, dropDownId: "CityId" });
+
+    });
+
+    $(`#btnRegisterElectrician`).click(async () => {
+
+        let electricianObject = {
+            '@Html.NameFor(model => model.FirstName)': $('#@Html.IdFor(model => model.FirstName)').val(),
+            '@Html.NameFor(model => model.MiddleName)': $('#@Html.IdFor(model => model.MiddleName)').val(),
+            '@Html.NameFor(model => model.LastName)': $('#@Html.IdFor(model => model.LastName)').val(),
+            '@Html.NameFor(model => model.StateId)': $('#@Html.IdFor(model => model.StateId)').val(),
+            '@Html.NameFor(model => model.CityId)': $('#@Html.IdFor(model => model.CityId)').val(),
+            '@Html.NameFor(model => model.LivingAddress)': $('#@Html.IdFor(model => model.LivingAddress)').val(),
+            '@Html.NameFor(model => model.MobileNumber)': $('#@Html.IdFor(model => model.MobileNumber)').val(),
+            '@Html.NameFor(model => model.AlternateMobileNumber)': $('#@Html.IdFor(model => model.AlternateMobileNumber)').val(),
+            '@Html.NameFor(model => model.EmailAddress)': $('#@Html.IdFor(model => model.EmailAddress)').val(),
+            '@Html.NameFor(model => model.ZipCode)': $('#@Html.IdFor(model => model.ZipCode)').val()
+        };
+
+        let response = await postOrPutData({ type: "POST", controller: "Electrician", endPoint: "RegisterElectrician", data: electricianObject });
+
+        $(`#tblElectrician`).DataTable().ajax.reload();
+
+    });   
+</script>

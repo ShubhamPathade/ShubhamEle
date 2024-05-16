@@ -3,8 +3,120 @@
   "WorkspaceRootPath": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\electrician\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\electrician\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\controllers\\electriciancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\electriciancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\electricians\\electricianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\electricians\\electricianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\models\\datatable\\electriciandatatablelistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\datatable\\electriciandatatablelistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\models\\datatable\\electriciansearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\datatable\\electriciansearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\models\\electricians\\electricianmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\electricians\\electricianmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\models\\common\\basedatatablesearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\models\\common\\basedatatablesearchmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A66E7096-5916-4A83-990F-6C006130580F}|Presentation\\Project.Web.Framework\\Project.Web.Framework.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web.framework\\infrastructure\\dependencyregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A66E7096-5916-4A83-990F-6C006130580F}|Presentation\\Project.Web.Framework\\Project.Web.Framework.csproj|solutionrelative:presentation\\project.web.framework\\infrastructure\\dependencyregistrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\state\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\state\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\wwwroot\\assets\\ajax_methods\\ajaxmethods.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\cities\\icityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\cities\\icityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\states\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\states\\stateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\cities\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\cities\\cityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\states\\istateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\states\\istateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\domain\\cities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\cities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\project.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\project.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\infrastructure\\mapper\\mapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|solutionrelative:presentation\\project.web\\infrastructure\\mapper\\mapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\infrastructure\\mapper\\automapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\infrastructure\\mapper\\automapperconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\domain\\electricians\\electrician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\electricians\\electrician.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\domain\\common\\dropdownmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\common\\dropdownmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.services\\electricians\\ielectricianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D30654A3-E320-4C79-89E4-FD78E03F038A}|Libraries\\Project.Services\\Project.Services.csproj|solutionrelative:libraries\\project.services\\electricians\\ielectricianservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\libraries\\project.core\\domain\\common\\smsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CF9AB4-7E4D-4BDB-A006-3B78C421FBDF}|Libraries\\Project.Core\\Project.Core.csproj|solutionrelative:libraries\\project.core\\domain\\common\\smsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E653700-8933-47A0-90A1-3190C9FA5EB5}|Presentation\\Project.Web\\Project.Web.csproj|d:\\shubham ele\\project\\shubhamelectrical\\project\\presentation\\project.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,24 +130,379 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "ElectricianController.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\ElectricianController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\ElectricianController.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\ElectricianController.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\ElectricianController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAswEEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:50:06.503Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Electrician\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Electrician\\Index.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Electrician\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Electrician\\Index.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAJAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T17:50:20.144Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StateService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\States\\StateService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\States\\StateService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\States\\StateService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\States\\StateService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:00:21.764Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ElectricianModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\Electricians\\ElectricianModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\Electricians\\ElectricianModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\Electricians\\ElectricianModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\Electricians\\ElectricianModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:05:43.27Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AjaxMethods.js",
               "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "RelativeDocumentMoniker": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
               "RelativeToolTip": "Presentation\\Project.Web\\wwwroot\\assets\\ajax_methods\\AjaxMethods.js",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-14T17:13:35.446Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_MasterLayout.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Shared\\_MasterLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:14:23.219Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\wwwroot\\css\\style.css",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "Presentation\\Project.Web\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T18:03:54.152Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CityService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Cities\\CityService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Cities\\CityService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Cities\\CityService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Cities\\CityService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwB8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:49:31.304Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutLogin.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Shared\\_LayoutLogin.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\Shared\\_LayoutLogin.cshtml*",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\Shared\\_LayoutLogin.cshtml*",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T20:34:33.34Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\User\\Login.cshtml*",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\User\\Login.cshtml*",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAIkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-16T20:35:00.423Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ElectricianService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Electricians\\ElectricianService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Electricians\\ElectricianService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Electricians\\ElectricianService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Electricians\\ElectricianService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAawCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:59:48.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ElectricianDataTableListModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\DataTable\\ElectricianDataTableListModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\DataTable\\ElectricianDataTableListModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\DataTable\\ElectricianDataTableListModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\DataTable\\ElectricianDataTableListModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T19:33:06.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ElectricianSearchModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\DataTable\\ElectricianSearchModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\DataTable\\ElectricianSearchModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\DataTable\\ElectricianSearchModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\DataTable\\ElectricianSearchModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T19:31:08.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseDatatableSearchModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\Common\\BaseDatatableSearchModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Models\\Common\\BaseDatatableSearchModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Models\\Common\\BaseDatatableSearchModel.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Models\\Common\\BaseDatatableSearchModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T17:54:27.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICityService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Cities\\ICityService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Cities\\ICityService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Cities\\ICityService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Cities\\ICityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:48:14.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\CityController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Controllers\\CityController.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Controllers\\CityController.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Controllers\\CityController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAhwB4AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:46:11.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\wwwroot\\assets\\css\\style.css",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\wwwroot\\assets\\css\\style.css",
+              "RelativeToolTip": "Presentation\\Project.Web\\wwwroot\\assets\\css\\style.css",
+              "ViewState": "AQIAAJECAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T18:03:37.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyRegistrar.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "RelativeToolTip": "Presentation\\Project.Web.Framework\\Infrastructure\\DependencyRegistrar.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:09:19.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IStateService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\States\\IStateService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\States\\IStateService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\States\\IStateService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\States\\IStateService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAArwA0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:00:23.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "City.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Cities\\City.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\Cities\\City.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Cities\\City.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\Cities\\City.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:53:31.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\State\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAADsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T19:14:07.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Project.Services.csproj",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Project.Services.csproj",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Project.Services.csproj",
+              "RelativeToolTip": "Libraries\\Project.Services\\Project.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-14T18:47:45.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Presentation\\Project.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-14T18:08:29.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MapperConfiguration.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "RelativeDocumentMoniker": "Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "RelativeToolTip": "Presentation\\Project.Web\\Infrastructure\\Mapper\\MapperConfiguration.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAQwCQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:06:45.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AutoMapperConfiguration.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Infrastructure\\Mapper\\AutoMapperConfiguration.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Infrastructure\\Mapper\\AutoMapperConfiguration.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Infrastructure\\Mapper\\AutoMapperConfiguration.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Infrastructure\\Mapper\\AutoMapperConfiguration.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:06:30.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Electrician.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\Electricians\\Electrician.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:05:58.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IElectricianService.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Electricians\\IElectricianService.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Services\\Electricians\\IElectricianService.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Services\\Electricians\\IElectricianService.cs",
+              "RelativeToolTip": "Libraries\\Project.Services\\Electricians\\IElectricianService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:57:50.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DropDownModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Common\\DropDownModel.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\Common\\DropDownModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Common\\DropDownModel.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\Common\\DropDownModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAIwAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:54:48.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SMSModel.cs",
+              "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Common\\SMSModel.cs",
+              "RelativeDocumentMoniker": "Libraries\\Project.Core\\Domain\\Common\\SMSModel.cs",
+              "ToolTip": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Libraries\\Project.Core\\Domain\\Common\\SMSModel.cs",
+              "RelativeToolTip": "Libraries\\Project.Core\\Domain\\Common\\SMSModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T17:54:08.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Shubham Ele\\Project\\ShubhamElectrical\\Project\\Presentation\\Project.Web\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Project.Web\\Program.cs",

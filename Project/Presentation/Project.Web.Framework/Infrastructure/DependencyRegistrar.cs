@@ -6,6 +6,8 @@ using Project.Core.Data;
 using Project.Core.Infrastructure;
 using Project.Core.Infrastructure.DependencyMangement;
 using Project.Data;
+using Project.Services.Cities;
+using Project.Services.Electricians;
 using Project.Services.Notifications;
 using Project.Services.Roles;
 using Project.Services.States;
@@ -44,7 +46,8 @@ namespace Project.Web.Framework.Infrastructure
 
             // New
             services.AddScoped<IStateService, StateService>();  
-
+            services.AddScoped<ICityService, CityService>();  
+            services.AddScoped<IElectricianService, ElectricianService>();  
 
         }
 
