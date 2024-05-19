@@ -131,8 +131,49 @@ const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,
 }
 
 
-const deleteData = async (id) => {
-    console.log(id);
+const deleteData = async ({ primaryKey = 0, controller = "", endPoint="" }) => {
+
+    let keyResponse = await checkArguments(primaryKey);
+    if (!keyResponse) {
+        return {
+            message: keyResponse
+        };
+    }
+
+    let controllerResponse = await checkArguments(controller);
+    if (!controllerResponse) {
+        return {
+            message: controllerResponse
+        };
+    }
+
+    let endPointResponse = await checkArguments(endPoint);
+    if (!endPointResponse) {
+        return {
+            message: endPointResponse
+        };
+    }
+
+    let response = await $.ajax({
+        type: `GET`,
+        url: `/${controller}/${endPoint}?id=${primaryKey}`,
+        success: (response) => {
+            return {
+                "Status": 200,
+                "Data": response
+            };
+        },
+        error: (xhr, status, error) => {
+            return {
+                "XHR": xhr,
+                "Staus": status,
+                "Error": error
+            };
+        }
+    });
+
+    return response;
+
 }
 
 const viewData = () => {
@@ -155,5 +196,36 @@ const fetchDropDown = async ({ dataArray=[], dropDownId="" }) => {
     const response = await Promise.all(promise);
 
     return response;
+
+}
+
+// Methods validation
+const checkArguments = async (value="") => {
+
+    let message = true;
+
+    switch (value) {
+        case undefined:
+            message = ` is not defined : ${value}`;
+            break;
+
+        case null:
+            message = ` is null : ${value}`;
+            break;
+
+        case "":
+            message = ` is empty : ${value}`;
+            break;
+
+        case NaN:
+            message = ` is Not a Number : ${value}`
+            break;
+
+        case 0:
+            message = ` is not valid : ${value}`;
+            break;
+    }
+
+    return message;
 
 }

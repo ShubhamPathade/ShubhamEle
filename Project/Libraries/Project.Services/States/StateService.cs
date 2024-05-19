@@ -35,6 +35,14 @@ namespace Project.Services.States
             return await StateRepository.Table.ToListAsync();
         }
 
+        public async Task<State> GetState(long stateId)
+        {
+            if (stateId == 0)
+                throw new ArgumentNullException(nameof(stateId));
+
+            return await StateRepository.GetByIdAsync(stateId);
+        }
+
         public async Task InsertState(State state)
         {
             if (state == null)

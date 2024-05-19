@@ -91,7 +91,10 @@
                             <button type="button" id="btnRegisterElectrician" name="submit" class="btn btn-primary">
                                 Register
                             </button>
-                        </div>
+                            <button type="reset" id="btnRegisterElectrician" name="submit" class="btn btn-secondary">
+                                Reset
+                            </button>
+                        </div>  
                     </div>
                 </form>
             </div>
@@ -100,14 +103,15 @@
 </div>
 
 <!-- Row start -->
-<div class="card mt-2">
+<div class="card  mt-2">
     <h5 class="card-header">Electrician List</h5>
     <div class="card-body p-3">
-        <div class="table-responsive text-nowrap">
+        <div class="table-responsive  text-nowrap">
             <table id="tblElectrician" class="table table-striped ">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Action</th>
+                        <th>Status</th>
                         <th>Mobile Number</th>
                         <th>Alternate Number</th>
                         <th>Email Address</th>
@@ -125,7 +129,7 @@
     $(document).ready(() => {
 
         jQuery.noConflict();
-
+        
         $('#tblElectrician').DataTable({
             "processing": true,
             "serverSide": true,
@@ -138,25 +142,88 @@
                     return data;
                 },
                 "dataSrc": function (json) {
+
                     if (!json.data && json.data.length == 0) {
                         return [];
                     }
+
                     for (let i = 0; i < json.data.length; i++) {
-                        let name = `${json.data[i]["firstName"]??""} ${json.data[i]["middleName"]??""} ${json.data[i]["lastName"]??""}`;
-                        json.data[i]["electricianName"] = name;
+                       
+                        json.data[i]["electricianName"] = `${json.data[i]["firstName"] ?? ""} ${json.data[i]["middleName"] ?? ""} ${json.data[i]["lastName"] ?? ""}`;
+                        
+                        json.data[i]["livingAddress"] = `${json.data[i]["livingAddress"] ?? ""} ${json.data[i]["CityName"] ?? ""} ${json.data[i]["stateName"] ?? ""}`;
+                       
+
+                        switch (json.data[i]["isActive"]) {
+
+                            case  null:
+                            case true:
+                                iconColor = `danger`;
+                                iconCLass = `bx-trash`;
+                                toolTipMessage = `Disable ${json.data[i]["firstName"]}.`;
+                                method = `deleteElectrician(${json.data[i]["id"]})`;
+                                break;
+
+                            case false: 
+                                iconColor = `primary`;
+                                iconCLass = `bx-archive-out`;
+                                toolTipMessage = `Restore ${json.data[i]["firstName"]}.`;
+                                method = `restoreElectrician(${json.data[i]["id"]})`;
+                                break;
+
+                        }
+
+                        json.data[i]["action"] = `
+                                                    <button
+                                                            type="button"
+                                                            onclick="${method}"
+                                                            class="btn btn-sm bg-label-${iconColor}"
+                                                            data-bs-toggle="tooltip"
+                                                            data-bs-offset="0,4"
+                                                            data-bs-placement="top"
+                                                            data-bs-html="true"
+                                                            title="<span>${toolTipMessage}</span>"
+                                                            >
+                                                            <i class='bx ${iconCLass}'></i>
+                                                    </button>
+
+                                                    <button 
+                                                            type="button" 
+                                                            onclick="(${json.data[i]["id"]})"  
+                                                            class="btn btn-sm bg-label-info"
+                                                            data-bs-toggle="tooltip"
+                                                            data-bs-offset="0,4"
+                                                            data-bs-placement="top"
+                                                            data-bs-html="true"
+                                                            title="<span>Update Information.</span>"
+                                                            >
+                                                        <i class='bx bxs-edit' ></i>
+                                                    </button>
+
+                        `;
+
                     }
                     return json.data;
                 },
             },
             'searching': false,
             "columns": [
+                { "data": "action" },
                 { "data": "electricianName" },
                 { "data": "mobileNumber" },
                 { "data": "alternateMobileNumber" },
                 { "data": "emailAddress" },
                 { "data": "zipCode" },
                 { "data": "livingAddress" }
-            ]
+            ],
+            "drawCallback":function(setting){
+
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl);
+                });
+
+            }
         });
 
     });
@@ -185,8 +252,31 @@
         };
 
         let response = await postOrPutData({ type: "POST", controller: "Electrician", endPoint: "RegisterElectrician", data: electricianObject });
+        
+        toggleToast({ bg: "info", title: "Electrician", message: response.message });
 
         $(`#tblElectrician`).DataTable().ajax.reload();
 
-    });   
+    });
+
+    // Delete record
+    const deleteElectrician = async (id) => {
+
+        let response = await deleteData({ primaryKey: id, controller: "Electrician", endPoint: "DeleteElectrician" });
+
+        toggleToast({ bg : "danger", title : "Electrician", message : response.message });
+
+        $(`#tblElectrician`).DataTable().ajax.reload();
+
+    }
+
+    const restoreElectrician=async(id)=>{
+
+        let response = await deleteData({ primaryKey: id, controller: "Electrician", endPoint: "RestoreElectrician" });
+
+        toggleToast({ bg: "success", title: "Electrician", message: response.message }); 
+         
+        $(`#tblElectrician`).DataTable().ajax.reload();
+
+    }
 </script>

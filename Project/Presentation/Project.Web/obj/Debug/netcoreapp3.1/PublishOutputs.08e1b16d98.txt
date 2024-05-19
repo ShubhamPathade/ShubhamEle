@@ -1,5 +1,6 @@
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\Project.Web.exe
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\wwwroot\assets\ajax_methods\AjaxMethods.js
+D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\wwwroot\assets\common\custom-toast.js
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\wwwroot\assets\css\bootstrap-datetimepicker.min.css
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\wwwroot\assets\css\bootstrap.css
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\bin\Debug\netcoreapp3.1\publish\wwwroot\assets\css\bootstrap.min.css

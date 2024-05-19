@@ -10,7 +10,7 @@ namespace Project.Web.Models.BaseResponse
 
 		public T Data { get; set; }
 
-		public string Messaage { get; set; }
+		public string Message { get; set; }
 
 		#endregion
 	}

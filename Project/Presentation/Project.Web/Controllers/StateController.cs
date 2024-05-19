@@ -61,7 +61,7 @@ namespace Project.Web.Controllers
 
 
 			responsModel.Data = stateList;
-			responsModel.Messaage = "Ok";
+			responsModel.Message = "Ok";
 			responsModel.Status = Status.Success;
 
 

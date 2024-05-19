@@ -29,6 +29,8 @@ namespace Project.Services.Cities
             get=> _unitOfWork.GetRepository<City>();
         }
         #endregion
+
+        #region Methods
         public async Task<List<DropDownModel>> GetCityByStateId(long stateId)
         {
             return await (CityRepository.Table.Select(x => new DropDownModel
@@ -37,5 +39,14 @@ namespace Project.Services.Cities
                 Value=x.Name
             }).ToListAsync());
         }
+
+        public async Task<City> GetCity(long cityId)
+        {
+            if(cityId == 0)
+                throw new ArgumentNullException(nameof(cityId));
+
+            return await CityRepository.GetByIdAsync(cityId);
+        }
+        #endregion
     }
 }

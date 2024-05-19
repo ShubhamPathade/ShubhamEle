@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Project.Core.Domain.Electricians;
+using Project.Services.Cities;
 using Project.Services.Electricians;
 using Project.Services.States;
 using Project.Web.Framework.Models;
+using Project.Web.Infrastructure.Factory.Electricians;
 using Project.Web.Infrastructure.Mapper.Extensions;
 using Project.Web.Models.BaseResponse;
 using Project.Web.Models.Common;
@@ -17,16 +19,22 @@ namespace Project.Web.Controllers
     public class ElectricianController : BaseController
     {
         #region Propertis
+        private readonly ICityService _cityService;
         private readonly IStateService _stateService;
         private readonly IElectricianService _electricianService;
+        private readonly IElectricianModelFactory _electricianModelFactory;
         #endregion
 
         #region Constructor
-        public ElectricianController(IStateService stateService,
-            IElectricianService electricianService)
+        public ElectricianController(ICityService cityService,
+            IStateService stateService,
+            IElectricianService electricianService,
+            IElectricianModelFactory electricianModelFactory)
         {
+            _cityService = cityService; 
             _stateService = stateService;
             _electricianService = electricianService;
+            _electricianModelFactory = electricianModelFactory;
 
         }
         #endregion
@@ -43,19 +51,19 @@ namespace Project.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> RegisterElectrician(ElectricianModel electricianModel)
         {
-            var baseResponse=new BaseResponse<string>();
+            var baseResponse = new BaseResponse<string>();
             try
             {
                 Electrician electrician = electricianModel.ToEntity<Electrician>();
                 electrician.CreatedOn = DateTime.Now;
                 await _electricianService.InsertElectrician(electrician);
-                baseResponse.Messaage = $"{electrician.FirstName} {electrician.LastName} successfully registered.";
+                baseResponse.Message = $"{electrician.FirstName} {electrician.LastName} successfully registered.";
                 baseResponse.Status = Status.Success;
                 return Json(baseResponse);
             }
             catch (Exception ex)
             {
-                baseResponse.Messaage = ex.Message;
+                baseResponse.Message = ex.Message;
                 baseResponse.Status = Status.Fail;
                 return Json(baseResponse);
             }
@@ -64,16 +72,36 @@ namespace Project.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetElectricians(ElectricianSearchModel model)
         {
-            var eletricianList = await _electricianService.GetAllElectrician();
+            var electricianList = await _electricianModelFactory.PrepareElectrcianDataTableList(model);
+            var count = electricianList.Count() > 0 ? electricianList.FirstOrDefault().TotalCount : 0;
+            var list = new
+            {
+                Data = electricianList,
+                Draw = model.Draw,
+                RecordsFiltered = count,
+                RecordsTotal = count
+            };
+            return Json(list);
+        }
 
-            var list=eletricianList.Select(x=>x.ToModel<ElectricianModel>());
+        [HttpGet]
+        public async Task<IActionResult> DeleteElectrician(long id)
+        {
+            var response= new BaseResponse<string>();
+            response.Data = "";
+            response.Message = await _electricianModelFactory.DeleteElectrician(id);
+            response.Status = Status.Success;
+            return Json(response);
+        }
 
-            ElectricianDataTableListModel electricianDataTableListModel = new ElectricianDataTableListModel();
-            electricianDataTableListModel.Data=list;
-            electricianDataTableListModel.Draw = model.Draw;
-            electricianDataTableListModel.RecordsFiltered = 40;
-            electricianDataTableListModel.RecordsTotal = 40;
-            return Json(electricianDataTableListModel);
+        [HttpGet]
+        public async Task<IActionResult> RestoreElectrician(long id)
+        {
+            var response = new BaseResponse<string>();
+            response.Data = "";
+            response.Message = await _electricianModelFactory.RestoreElectrician(id);
+            response.Status = Status.Success;
+            return Json(response);
         }
         #endregion
     }

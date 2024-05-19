@@ -31,7 +31,7 @@ namespace Project.Web.Controllers
         public async Task<IActionResult> GetCityByState(long stateId)
         {
             var response = new BaseResponse<List<DropDownModel>>();
-            response.Messaage = "Ok";
+            response.Message = "Ok";
             response.Status = Status.Success;
             try
             {
@@ -43,7 +43,7 @@ namespace Project.Web.Controllers
             catch (System.Exception ex)
             {
 
-                response.Messaage = ex.Message;
+                response.Message = ex.Message;
                 response.Status = Status.Fail; 
                 return Json(response);
 
