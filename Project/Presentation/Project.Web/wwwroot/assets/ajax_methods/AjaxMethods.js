@@ -81,7 +81,7 @@ const getData = async ({ controller = "State", endPoint = "AddState", parameter 
 
 
 //Fetch data in table 
-const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,viewAction=false } ) => {
+const fetchDataTable = async ({ dataArray = [], tableId = "", deleteAction = false, viewAction = false }) => {
 
     if (dataArray.length > 0) {
 
@@ -91,9 +91,9 @@ const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,
 
         dataArray.forEach((value, index) => {
 
-            let row = `<td>${index+1}</td>`;
+            let row = `<td>${index + 1}</td>`;
 
-            for (let i = 0; i < (objectLength-1); i++) {
+            for (let i = 0; i < (objectLength - 1); i++) {
 
                 row += `<td>${Object.values(value)[i]}</td>`;
 
@@ -101,14 +101,14 @@ const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,
 
             let actionBtn = `<td>`;
 
-            if (deleteAction==true) {
+            if (deleteAction == true) {
 
                 let deleteAction = `<button type="button" onclick="deleteData(${value.id})" class="btn btn-danger"><span class="icon-trash2"></span></button>`;
 
                 actionBtn += deleteAction
 
             }
-          
+
 
             if (viewAction == true) {
 
@@ -130,8 +130,8 @@ const fetchDataTable = async ({ dataArray = [], tableId = "",deleteAction=false,
 
 }
 
-
-const deleteData = async ({ primaryKey = 0, controller = "", endPoint="" }) => {
+// SOft delete data
+const deleteData = async ({ primaryKey = 0, controller = "", endPoint = "" }) => {
 
     let keyResponse = await checkArguments(primaryKey);
     if (!keyResponse) {
@@ -176,12 +176,9 @@ const deleteData = async ({ primaryKey = 0, controller = "", endPoint="" }) => {
 
 }
 
-const viewData = () => {
-    console.log(id);
-}
 
 // Fetch data in simple drop down list
-const fetchDropDown = async ({ dataArray=[], dropDownId="" }) => {
+const fetchDropDown = async ({ dataArray = [], dropDownId = "" }) => {
 
     $(`#${dropDownId}`).empty();
 
@@ -200,7 +197,7 @@ const fetchDropDown = async ({ dataArray=[], dropDownId="" }) => {
 }
 
 // Methods validation
-const checkArguments = async (value="") => {
+const checkArguments = async (value = "") => {
 
     let message = true;
 
@@ -227,5 +224,53 @@ const checkArguments = async (value="") => {
     }
 
     return message;
+
+}
+
+// Loader hide show
+const showHideLoader = async ({ elementIdForShow = "", elementIdForHide = "" }) => {
+
+    let showIdResponse = await checkArguments(elementIdForShow);
+    if (!showIdResponse) {
+        return {
+            message: showIdResponse
+        };
+    }
+
+    let hideIdResponse = await checkArguments(elementIdForHide);
+    if (!hideIdResponse) {
+        return {
+            message: hideIdResponse
+        };
+    }
+
+    $(`#${elementIdForHide}`).addClass(`hide-element`);
+    $(`#${elementIdForShow}`).removeClass(`hide-element`);
+
+    return "Ok";
+
+}
+
+const showHideActionLoader = async ({ element = "", color = null }) => {
+
+    let elementResponse = await checkArguments(element);
+    if (!elementResponse) {
+        return {
+            message: elementResponse
+        };
+    }
+
+    $(element).attr("onclick", false);
+
+    let child = $(element).find("i");
+
+    child.replaceWith(`<span class="spinner-border spinner-border-sm text-${color??"primary"}"></span>`);
+
+}
+
+// Reload datatables
+const reloadDataTable = async (tableId="") => {
+
+    $(`#${tableId}`).DataTable().ajax.reload();
 
 }

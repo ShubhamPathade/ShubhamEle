@@ -17,18 +17,14 @@
                       </div>
     `);
 
-    // Prepend the toast to the container
     $('#toastContainer').prepend(toast);
 
-    // Initialize the Bootstrap toast
     let bsToast = new bootstrap.Toast(toast[0]);
 
-    // Show the toast
     bsToast.show();
 
-    // Automatically hide the toast after a delay
     setTimeout(() => {
         bsToast.hide();
-    }, 3000);
+    }, 5000);
 
 }
