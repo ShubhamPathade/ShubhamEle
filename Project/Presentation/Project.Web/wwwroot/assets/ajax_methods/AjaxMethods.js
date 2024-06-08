@@ -7,6 +7,7 @@ const postOrPutData = async ({ type = "POST", controller = "State", endPoint = "
         let response = await $.ajax({
             type: `POST`,
             url: `/${controller}/${endPoint}`,
+            contentType: 'application/x-www-form-urlencoded',
             data: data,
             success: (response) => {
                 return response;
@@ -182,9 +183,17 @@ const fetchDropDown = async ({ dataArray = [], dropDownId = "" }) => {
 
     $(`#${dropDownId}`).empty();
 
+    if (dataArray.length == 0) {
+
+        $(`#${dropDownId}`).append(`<option selected value="0" >Data not found</option>`);
+
+        return "Data Not Found";
+
+    }
+
     let promise = dataArray.map((data, key) => {
 
-        $(`#${dropDownId}`).append(`<option value="${data.id}" >${data.value}</option>`);
+        $(`#${dropDownId}`).append(`<option value="${data.value}" >${data.text}</option>`);
 
         return data;
 
@@ -264,13 +273,76 @@ const showHideActionLoader = async ({ element = "", color = null }) => {
 
     let child = $(element).find("i");
 
-    child.replaceWith(`<span class="spinner-border spinner-border-sm text-${color??"primary"}"></span>`);
+    child.replaceWith(`<span class="spinner-border spinner-border-sm text-${color ?? "primary"}"></span>`);
 
 }
 
 // Reload datatables
-const reloadDataTable = async (tableId="") => {
+const reloadDataTable = async (tableId = "") => {
 
     $(`#${tableId}`).DataTable().ajax.reload();
+
+}
+
+// Render partial view 
+const renderPartialView = async ({ controller = "State", endPoint = "AddState", id = null }) => {
+
+    try {
+
+        let dynamicUrl = ``;
+
+        if (id == null) {
+
+            dynamicUrl = `/${controller}/${endPoint}`
+
+        } else {
+
+            dynamicUrl = `/${controller}/${endPoint}?id=${id}`
+
+        }
+
+        let response = await $.ajax({
+            type: `GET`,
+            url: dynamicUrl,
+            success: (response) => {
+                return response;
+            },
+            error: (xhr, status, error) => {
+                return {
+                    "XHR": xhr,
+                    "Staus": status,
+                    "Error": error
+                };
+            }
+        });
+
+        return response;
+
+    } catch (e) {
+
+        return {
+            "Error": e
+        };
+
+    }
+
+}
+
+// Show validation message on form
+const showValidationMessage = async ({ validationData = [] }) => {
+
+    debugger
+
+    if (validationData.data.length > 0) {
+
+        $('span[data-valmsg-for]').text('');
+
+        validationData.data.forEach(function (error) {
+
+            $(`span[data-valmsg-for="${error.key}"]`).text(error.value);
+
+        });
+
+    }
 
 }

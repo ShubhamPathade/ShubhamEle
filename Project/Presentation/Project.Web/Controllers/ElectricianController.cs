@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using iTextSharp.text;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using Project.Core.Domain.Electricians;
 using Project.Services.Cities;
 using Project.Services.Electricians;
@@ -11,6 +13,7 @@ using Project.Web.Models.Common;
 using Project.Web.Models.DataTable;
 using Project.Web.Models.Electricians;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,19 +22,17 @@ namespace Project.Web.Controllers
     public class ElectricianController : BaseController
     {
         #region Propertis
-        private readonly ICityService _cityService;
         private readonly IStateService _stateService;
         private readonly IElectricianService _electricianService;
         private readonly IElectricianModelFactory _electricianModelFactory;
         #endregion
 
         #region Constructor
-        public ElectricianController(ICityService cityService,
+        public ElectricianController(
             IStateService stateService,
             IElectricianService electricianService,
             IElectricianModelFactory electricianModelFactory)
         {
-            _cityService = cityService; 
             _stateService = stateService;
             _electricianService = electricianService;
             _electricianModelFactory = electricianModelFactory;
@@ -44,22 +45,50 @@ namespace Project.Web.Controllers
         {
             ElectricianModel model = new ElectricianModel();
             model.StateDropDown = await _stateService.PrepareStateDropDown();
-
             return View(model);
         }
 
         [HttpPost]
         public async Task<IActionResult> RegisterElectrician(ElectricianModel electricianModel)
         {
-            var baseResponse = new BaseResponse<string>();
+            var baseResponse = new BaseResponse<List<ErrorModel>>();
             try
             {
-                Electrician electrician = electricianModel.ToEntity<Electrician>();
-                electrician.CreatedOn = DateTime.Now;
-                await _electricianService.InsertElectrician(electrician);
-                baseResponse.Message = $"{electrician.FirstName} {electrician.LastName} successfully registered.";
-                baseResponse.Status = Status.Success;
-                return Json(baseResponse);
+                if (ModelState.IsValid)
+                {
+                    Electrician electrician = electricianModel.ToEntity<Electrician>();
+                    if (electricianModel.Id <= 0)
+                    {
+                        await _electricianService.InsertElectrician(electrician);
+                        baseResponse.Message = $"{electrician.FirstName} {electrician.LastName} successfully registered.";
+                        baseResponse.Status = Status.Success;
+                    }
+                    else if (electricianModel.Id > 0)
+                    {
+                        electrician.ModifiedOn = DateTime.Now;
+                        await _electricianService.UpdateElectrician(electrician);
+                        baseResponse.Message = $"{electrician.FirstName} {electrician.LastName} successfully updated.";
+                        baseResponse.Status = Status.Success;
+                    }
+                    return Json(baseResponse);
+                }
+                else
+                {
+                    var errors = ModelState
+                               .Where(ms => ms.Value.Errors.Any())
+                               .Select(ms => new ErrorModel
+                               {
+                                   Key = ms.Key,
+                                   Value = ms.Value.Errors.FirstOrDefault().ErrorMessage
+                               })
+                               .ToList();
+
+                    baseResponse.Message = $"Provided data is no valid";
+                    baseResponse.Status = Status.Fail;
+                    baseResponse.Data = errors;
+                    baseResponse.ErrorOccured = true;
+                    return Json(baseResponse);
+                }
             }
             catch (Exception ex)
             {
@@ -72,22 +101,39 @@ namespace Project.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> GetElectricians(ElectricianSearchModel model)
         {
-            var electricianList = await _electricianModelFactory.PrepareElectrcianDataTableList(model);
-            var count = electricianList.Count() > 0 ? electricianList.FirstOrDefault().TotalCount : 0;
-            var list = new
+            try
             {
-                Data = electricianList,
-                Draw = model.Draw,
-                RecordsFiltered = count,
-                RecordsTotal = count
-            };
-            return Json(list);
+
+                var electricianList = await _electricianModelFactory.PrepareElectrcianDataTableList(model);
+                return Json(electricianList);
+
+            }
+            catch (Exception ex)
+            {
+                ex.Message.ToString();
+                throw;
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> CreateElectrician()
+        {
+            ElectricianModel model = new ElectricianModel();
+            model.StateDropDown = await _stateService.PrepareStateDropDown();
+            return PartialView("_CreateOrUpdate", model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditElectrician(long id)
+        {
+            var electrcianData = await _electricianModelFactory.GetElectricianAsync(id);
+            return PartialView("_CreateOrUpdate", electrcianData);
         }
 
         [HttpGet]
         public async Task<IActionResult> DeleteElectrician(long id)
         {
-            var response= new BaseResponse<string>();
+            var response = new BaseResponse<string>();
             response.Data = "";
             response.Message = await _electricianModelFactory.DeleteElectrician(id);
             response.Status = Status.Success;

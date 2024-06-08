@@ -2,7 +2,8 @@
 
 namespace Project.Web.Models.Common
 {
-    public abstract class BaseDatatableListModel<T> where T : BaseEntityModel
+    //public abstract class BaseDatatableListModel<T> where T : BaseEntityModel
+    public class BaseDatatableListModel<T> 
     {
         #region Constructor
 

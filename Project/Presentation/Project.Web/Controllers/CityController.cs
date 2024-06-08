@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Project.Core.Domain.Common;
 using Project.Services.Cities;
 using Project.Web.Framework.Models;
@@ -30,7 +31,7 @@ namespace Project.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCityByState(long stateId)
         {
-            var response = new BaseResponse<List<DropDownModel>>();
+            var response = new BaseResponse<IEnumerable<SelectListItem>>();
             response.Message = "Ok";
             response.Status = Status.Success;
             try

@@ -1,4 +1,5 @@
 ﻿using Project.Web.Framework.Models;
+using System.Collections;
 
 namespace Project.Web.Models.BaseResponse
 {
@@ -11,6 +12,7 @@ namespace Project.Web.Models.BaseResponse
 		public T Data { get; set; }
 
 		public string Message { get; set; }
+		public bool ErrorOccured { get; set; }
 
 		#endregion
 	}

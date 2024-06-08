@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Project.Core.Data;
 using Project.Core.Domain.Cities;
 using Project.Core.Domain.Common;
@@ -26,23 +27,23 @@ namespace Project.Services.Cities
         #region Fields
         protected IRepository<City> CityRepository
         {
-            get=> _unitOfWork.GetRepository<City>();
+            get => _unitOfWork.GetRepository<City>();
         }
         #endregion
 
         #region Methods
-        public async Task<List<DropDownModel>> GetCityByStateId(long stateId)
+        public async Task<IEnumerable<SelectListItem>> GetCityByStateId(long stateId)
         {
-            return await (CityRepository.Table.Select(x => new DropDownModel
+            return await (CityRepository.Table.Where(x => x.StateId == stateId).Select(x => new SelectListItem
             {
-                Id=x.Id.ToString(),
-                Value=x.Name
+                Value = x.Id.ToString(),
+                Text = x.Name
             }).ToListAsync());
         }
 
         public async Task<City> GetCity(long cityId)
         {
-            if(cityId == 0)
+            if (cityId == 0)
                 throw new ArgumentNullException(nameof(cityId));
 
             return await CityRepository.GetByIdAsync(cityId);

@@ -127,6 +127,56 @@ namespace Project.Data.Migrations
                     b.ToTable("Electrician");
                 });
 
+            modelBuilder.Entity("Project.Core.Domain.SpModels.Electrician.ElectricianSpModel", b =>
+                {
+                    b.Property<string>("AlternateMobileNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("CityId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmailAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("Id")
+                        .HasColumnType("bigint");
+
+                    b.Property<bool?>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LivingAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MobileNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("StateId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("StateName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TotalCount")
+                        .HasColumnType("int");
+
+                    b.Property<long>("ZipCode")
+                        .HasColumnType("bigint");
+
+                    b.ToTable("ElectricianSpModel");
+                });
+
             modelBuilder.Entity("Project.Core.Domain.States.State", b =>
                 {
                     b.Property<long>("Id")

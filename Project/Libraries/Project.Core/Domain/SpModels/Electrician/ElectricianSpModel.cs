@@ -20,6 +20,5 @@ namespace Project.Core.Domain.SpModels.Electrician
         public string CityName { get; set; }
         public string LivingAddress { get; set; }
         public long ZipCode { get; set; }
-        public int TotalCount { get; set; }
     }
 }

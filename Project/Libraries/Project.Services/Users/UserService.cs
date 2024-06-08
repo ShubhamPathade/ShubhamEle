@@ -64,7 +64,7 @@ namespace Project.Services.Users
 
         public async Task<UserRoleMapping> GetUserAsyncByID(long id)
         {
-            var query = RoleMappingRepository.Table.Where(x => x.UserId == id).FirstOrDefault();
+            var query =  RoleMappingRepository.Table.Where(x => x.UserId == id).FirstOrDefault();
 
             return query;
         }

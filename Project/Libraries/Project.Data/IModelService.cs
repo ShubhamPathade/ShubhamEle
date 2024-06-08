@@ -10,7 +10,7 @@ namespace Project.Data
     {
         #region Methods
 
-        Task<IEnumerable<T>> ModelFromSqlAsync(string sql, params object[] parameters);
+        Task<IEnumerable<T>> ModelFromSqlAsync(string sql, int timeOut=30,params object[] parameters);
         Task<IEnumerable<T>> UpdateModelFromSqlAsync(string sql, params object[] parameters);
 
         #endregion

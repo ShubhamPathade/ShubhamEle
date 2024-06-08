@@ -41,7 +41,8 @@ namespace Project.Web
 
             #region Enabled this when using migration 
 
-            services.AddDbContext<ProjectDataContext>(otp => otp.UseSqlServer("Data Source=sql.bsite.net\\MSSQL2016;Initial Catalog=shubhamelectricals_dev;Integrated Security=False;Persist Security Info=False;User ID=shubhamelectricals_dev;Password=sp1234;"));
+            //services.AddDbContext<ProjectDataContext>(otp => otp.UseSqlServer("Data Source=sql.bsite.net\\MSSQL2016;Initial Catalog=shubhamelectricals_dev;Integrated Security=False;Persist Security Info=False;User ID=shubhamelectricals_dev;Password=sp1234;"));
+            services.AddDbContext<ProjectDataContext>(otp => otp.UseSqlServer("Server=DESKTOP-0OMNT7V;Database=ShubhamEleDev;Trusted_Connection=True;MultipleActiveResultSets=true;"));
 
             #endregion
 

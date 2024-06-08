@@ -47,12 +47,23 @@ namespace Project.Data
             return sql;
         }
 
+        private void SetCommandTimeout(int timeout)
+        {
+            var context = _dbContext as DbContext;
+            if (context != null)
+            {
+                context.Database.SetCommandTimeout(timeout);
+            }
+        }
+
         #endregion
 
         #region Methods
 
-        public async Task<IEnumerable<T>> ModelFromSqlAsync(string sql, params object[] parameters)
+        public async Task<IEnumerable<T>> ModelFromSqlAsync(string sql, int timeOut=30,params object[] parameters)
         {
+            SetCommandTimeout(timeOut);
+
             sql = CreateSqlWithParameters(sql, parameters);
             var result = await _dbContext.SetModel<T>()
                  .FromSqlRaw(sql, parameters)

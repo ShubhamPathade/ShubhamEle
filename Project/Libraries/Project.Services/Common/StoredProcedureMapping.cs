@@ -8,6 +8,7 @@ namespace Project.Services.Common
     {
         #region Electrician
         public static string spGetAllElectrcians = "[dbo].[spGetElectricians]";
+        public static string spGetAllElectrciansCount = "[dbo].[spGetElectriciansCount]";
         #endregion
     }
 }

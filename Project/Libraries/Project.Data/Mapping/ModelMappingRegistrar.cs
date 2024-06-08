@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Project.Core.Domain.SpModels.Common;
 using Project.Core.Domain.SpModels.Electrician;
 //using Project.Core.Domain.Dashboard;
 //using Project.Core.Domain.Orders;
@@ -14,12 +15,17 @@ namespace Project.Data.Mapping
     {
         public static void Register(ModelBuilder modelBuilder)
         {
+            // Total count model
+            modelBuilder.Entity<TotalCountModel>(entity =>
+            {
+                entity.HasNoKey();
+            });
+
             // Electrcian Model
             modelBuilder.Entity<ElectricianSpModel>(entity =>
             {
                 entity.HasNoKey();
             });
-
         }
     }
 }
