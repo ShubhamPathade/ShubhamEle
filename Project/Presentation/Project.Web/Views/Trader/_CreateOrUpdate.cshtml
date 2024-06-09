@@ -1,0 +1,86 @@
+﻿@model ElectricianModel
+<!--Create or update electrcian form-->
+<form id="submitElectrcian">
+    <input type="hidden" asp-for="Id" />
+    <div class="row mb-2">
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="FirstName" class="col-form-label">First Name</label>
+                <input type="text" class="form-control" asp-for="FirstName" placeholder="First Name">
+                <span class="text-danger" asp-validation-for="FirstName"></span>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="MiddleName" class="col-form-label">Middle Name</label>
+                <input type="text" class="form-control" asp-for="MiddleName" placeholder="Middle Name">
+                <span class="text-danger" asp-validation-for="MiddleName"></span>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="LastName" class="col-form-label">Last Name</label>
+                <input type="text" class="form-control" asp-for="LastName" placeholder="Last Name">
+                <span class="text-danger" asp-validation-for="LastName"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="StateId" class="col-form-label">Select State</label>
+                <select class="form-control selectpicker" asp-for=StateId asp-items="@Model.StateDropDown" onchange="handleStateWiseCityDropDown()">
+                    <option value="0">Choose...</option>
+                </select>
+            </div>
+            <span class="text-danger" asp-validation-for="StateId"></span>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="CityId" class="col-form-label">Select City</label>
+                <select class="form-control selectpicker" asp-for="CityId" asp-items="@Model.CityDropDown">
+                    <option value="0">Choose State First</option>
+                </select>
+            </div>
+            <span class="text-danger" asp-validation-for="CityId"></span>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="form-group">
+                <label asp-for="LivingAddress" class="col-form-label">Living Address</label>
+                <input type="text" class="form-control" asp-for="LivingAddress" placeholder="Enter Living Address In Breif">
+                <span class="text-danger" asp-validation-for="LivingAddress"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-3 col-sm-12">
+            <div class="form-group">
+                <label asp-for="MobileNumber" class="col-form-label">Mobile Number</label>
+                <input type="number" class="form-control" asp-for="MobileNumber" placeholder="Enter Mobile Number">
+                <span class="text-danger" asp-validation-for="MobileNumber"></span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="form-group">
+                <label asp-for="AlternateMobileNumber" class="col-form-label">Alternate Number</label>
+                <input type="number" class="form-control" asp-for="AlternateMobileNumber" placeholder="Enter Alternate Mobile Number">
+                <span class="text-danger" asp-validation-for="AlternateMobileNumber"></span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="form-group">
+                <label asp-for="EmailAddress" class="col-form-label">Email</label>
+                <input type="email" class="form-control" asp-for="EmailAddress" placeholder="Enter Email Address">
+                <span class="text-danger" asp-validation-for="EmailAddress"></span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="form-group">
+                <label asp-for="ZipCode" class="col-form-label">Zip Code</label>
+                <input type="text" class="form-control" asp-for="ZipCode" placeholder="Enter Zip Code">
+                <span class="text-danger" asp-validation-for="ZipCode"></span>
+            </div>
+        </div>
+    </div>
+</form>
+<!--/. Form end-->

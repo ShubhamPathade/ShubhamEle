@@ -1,56 +1,307 @@
-﻿@{
+﻿@model ElectricianModel
+@{
     Layout = "_MasterLayout";
 }
-<div class="row gutters">
-    <div class="col-sm-12">
-        <form>
-            <div class="form-block">
-                <div class="form-block-header">
-                    <h4>Trader</h4>
-                </div>
-                <div class="form-block-body">
-                    <div class="row gutters">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label for="inputName" class="col-form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputMobNumber" class="col-form-label">Mobile</label>
-                                <input type="number" class="form-control" id="inputMobNumber" placeholder="Mobile">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="form-group">
-                                <label for="inputEmail" class="col-form-label">Your E-mail</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputSubject" class="col-form-label">Subject</label>
-                                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label class="col-form-label">Your Message</label>
-                                <textarea class="form-control" placeholder="Message" rows="3"></textarea>
-                                <div class="form-text text-muted">
-                                    <p id="characterLeft" class="help-block">Max 250 characters</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row gutters">
-                        <div class="col-xl-12">
-                            <button type="button" id="submit" name="submit" class="btn btn-primary float-right">
-                                Submit
-                                Form
-                            </button>
-                        </div>
+
+<h4 class="pt-0 pb-4 mb-0"><span class="text-muted fw-light">Forms /</span> Electrician</h4>
+
+<!-- Basic Layout -->
+<div class="row form-div">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Register / Update Electrician</h5>
+                @* <small class="text-muted float-end">Default label</small> *@
+            </div>
+            <div class="card-body">
+                <div class="create-update-partial-view-container">
+                    @await Html.PartialAsync("_CreateOrUpdate")
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-xl-12" style="text-align:right;">
+                        <button type="button" class="btn btn-secondary" id="btnReset" onclick="loadCreateView()">
+                            Reset
+                        </button>
+                        <button type="button" id="btnRegisterElectrician" name="submit" class="btn btn-primary">
+                            Register
+                        </button>
+                        <button type="button" class="btn btn-primary hide-element" id="ldrRegisterElectrician" role="status">
+                            <span class="spinner-border spinner-border-sm"></span>&nbsp;&nbsp;Processing
+                        </button>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 </div>
+
+
+
+<!-- Table start -->
+<div class="card  mt-2">
+    <div class="card-header pr-3 pl-3 pt-3 pb-0">
+        <h5 class="card-title">Electrcian List</h5>
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="form-group">
+                    <input type="text" class="form-control mb-2" id="txtSearch" placeholder="Search here by electrcian info">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="form-group">
+                    <select class="form-control selectpicker mb-2" id="ddStatus" >
+                        <option selected value="null">Choose Status</option>
+                        <option value="null">All</option>
+                        <option value="true">Active</option>
+                        <option value="false">InActive</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="form-group">
+                   <button type="button" onclick="filterDataTable()" class="btn btn-primary mb-2">Filter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body pr-3 pl-3 pb-3 pt-0">
+        <div class="table-responsive  text-nowrap">
+            <table id="tblElectrician" class="table table-striped">
+                <thead class="">
+                    <tr>
+                        <th>Action</th>
+                        <th>Status</th>
+                        <th>Mobile Number</th>
+                        <th>Alternate Number</th>
+                        <th>Email Address</th>
+                        <th>Zip Code</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Table ends -->
+
+<script>
+    $(document).ready(() => {
+
+        jQuery.noConflict();
+
+        $('#tblElectrician').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ordering": false,
+            "bLengthChange": false,
+            "bStateSave": true,
+            "ajax": {
+                'url': '@Url.Action("GetElectricians", "Electrician")',
+                'type': 'POST',
+                'data': function (data) {
+
+                    data.SearchText = $('#txtSearch').val();
+                    data.Status = $('#ddStatus').val();
+                    return data;
+                },
+                "dataSrc": function (json) {
+
+                    if (!json.data && json.data.length == 0) {
+                        return [];
+                    }
+
+                    for (let i = 0; i < json.data.length; i++) {
+
+                        json.data[i]["electricianName"] = `${json.data[i]["firstName"] ?? ""} ${json.data[i]["middleName"] ?? ""} ${json.data[i]["lastName"] ?? ""}`;
+
+                        json.data[i]["livingAddress"] = `${json.data[i]["livingAddress"] ?? ""} ${json.data[i]["CityName"] ?? ""} ${json.data[i]["stateName"] ?? ""}`;
+
+
+                        switch (json.data[i]["isActive"]) {
+
+                            case null:
+                            case true:
+                                iconColor = `danger`;
+                                iconCLass = `bx-trash`;
+                                toolTipMessage = `Disable ${json.data[i]["firstName"]}.`;
+                                method = `deleteElectrician(this)`;
+                                break;
+
+                            case false:
+                                iconColor = `primary`;
+                                iconCLass = `bx-archive-out`;
+                                toolTipMessage = `Restore ${json.data[i]["firstName"]}.`;
+                                method = `restoreElectrician(this)`;
+                                break;
+
+                        }
+
+                        json.data[i]["action"] = `
+                                                                    <button
+                                                                            type="button"
+                                                                             value="${json.data[i]["id"]}"
+                                                                            onclick="${method}"
+                                                                            class="btn btn-sm bg-label-${iconColor}"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="top"
+                                                                            data-bs-html="true"
+                                                                            title="<span>${toolTipMessage}</span>"
+                                                                            >
+                                                                            <i class='bx ${iconCLass}'></i>
+                                                                    </button>
+
+                                                                    <button
+                                                                            type="button"
+                                                                            value="${json.data[i]["id"]}"
+                                                                            onclick="viewElectrcian(${json.data[i]["id"]})"
+                                                                            class="btn btn-sm bg-label-info"
+                                                                            data-bs-toggle="tooltip"
+                                                                            data-bs-offset="0,4"
+                                                                            data-bs-placement="top"
+                                                                            data-bs-html="true"
+                                                                            title="<span>Update Information.</span>"
+                                                                            >
+                                                                        <i class='bx bxs-edit' ></i>
+                                                                    </button>
+                                        `;
+
+                    }
+                    return json.data;
+                },
+            },
+            'searching': false,
+            "columns": [
+                { "data": "action" },
+                { "data": "electricianName" },
+                { "data": "mobileNumber" },
+                { "data": "alternateMobileNumber" },
+                { "data": "emailAddress" },
+                { "data": "zipCode" },
+                { "data": "livingAddress" }
+            ],
+            "drawCallback": function (setting) {
+
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                    new bootstrap.Tooltip(tooltipTriggerEl);
+                });
+
+            }
+        });
+
+    });
+
+    // Fetch cities state wise.
+    const handleStateWiseCityDropDown = async () => {
+
+        let stateId = $(`#@Html.IdFor(model => model.StateId)`).val();
+
+        let cityData = await getData({ controller: "City", endPoint: "GetCityByState", parameter: "stateId", parameterValue: stateId, retriveDataById: true });
+
+        let dd = await fetchDropDown({ dataArray: cityData.data, dropDownId: "CityId" });
+
+    };
+
+    const scrollTop = () => {
+        $('html, body').animate({
+            scrollTop: $(".form-div").offset().top
+        }, 0);
+    }
+
+    // Register new electrician
+    $(`#btnRegisterElectrician`).click(async () => {
+
+        let electricianObject = $('#submitElectrcian').serialize();
+
+        await showHideLoader({ elementIdForShow: "ldrRegisterElectrician", elementIdForHide: "btnRegisterElectrician" });
+
+        let response = await postOrPutData({ type: "POST", controller: "Electrician", endPoint: "RegisterElectrician", data: electricianObject });
+
+        if (response.errorOccured) {
+
+            await showValidationMessage({ validationData: response });
+
+            toggleToast({ bg: "danger", title: "Electrician", message: response.message });
+
+        } else {
+
+            $('span[data-valmsg-for]').text('');
+
+            toggleToast({ bg: "success", title: "Electrician", message: response.message });
+
+            await reloadDataTable(`tblElectrician`);
+
+        }
+
+        await showHideLoader({ elementIdForShow: "btnRegisterElectrician", elementIdForHide: "ldrRegisterElectrician" });
+
+    });
+
+    // Delete electrician
+    const deleteElectrician = async (currentElement) => {
+
+        let id = $(currentElement).attr("value");
+
+        await showHideActionLoader({ element: currentElement, color: "danger" });
+
+        let response = await deleteData({ primaryKey: id, controller: "Electrician", endPoint: "DeleteElectrician" });
+
+        toggleToast({ bg: "danger", title: "Electrician", message: response.message });
+
+        await reloadDataTable(`tblElectrician`);
+
+    }
+
+    // Restore deleted electrcian
+    const restoreElectrician = async (currentElement) => {
+
+        let id = $(currentElement).attr("value");
+
+        await showHideActionLoader({ element: currentElement, color: "primary" });
+
+        let response = await deleteData({ primaryKey: id, controller: "Electrician", endPoint: "RestoreElectrician" });
+
+        toggleToast({ bg: "success", title: "Electrician", message: response.message });
+
+        reloadDataTable(`tblElectrician`);
+
+    }
+
+    // View electrician details
+    const viewElectrcian = async (id) => {
+
+        let response = await renderPartialView({ controller: "Electrician", endPoint: "EditElectrician", id: id });
+
+        $('.create-update-partial-view-container').empty();
+
+        $('#btnRegisterElectrician').text('Update');
+
+        $('.create-update-partial-view-container').html(response);
+
+        scrollTop();
+
+    }
+
+    // Load create view
+    const loadCreateView = async () => {
+
+        let response = await renderPartialView({ controller: "Electrician", endPoint: "CreateElectrician" });
+
+        $('.create-update-partial-view-container').empty();
+
+        $('#btnRegisterElectrician').text('Register');
+
+        $('.create-update-partial-view-container').html(response);
+
+    }
+
+    // Reload datatable with filteres
+    const filterDataTable=()=>{
+
+        reloadDataTable(`tblElectrician`);
+
+    }
+</script>

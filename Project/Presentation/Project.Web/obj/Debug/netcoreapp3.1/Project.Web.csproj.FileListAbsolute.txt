@@ -490,6 +490,7 @@ D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\De
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Project.Web.RazorCoreGenerate.cache
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Electrician\Index.cshtml.g.cs
+D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Electrician\_CreateOrUpdate.cshtml.g.cs
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Role\Create.cshtml.g.cs
 D:\Shubham Ele\Project\ShubhamElectrical\Project\Presentation\Project.Web\obj\Debug\netcoreapp3.1\Razor\Views\Role\Edit.cshtml.g.cs

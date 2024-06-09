@@ -1,8 +1,5 @@
-﻿using iTextSharp.text;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using Project.Core.Domain.Electricians;
-using Project.Services.Cities;
 using Project.Services.Electricians;
 using Project.Services.States;
 using Project.Web.Framework.Models;
